@@ -6,9 +6,8 @@ pipeline:
     tags: {}
     stages:
         - stage:
-              name: test
+              name: testytest
               identifier: test
-              description: ""
               type: CI
               spec:
                   cloneCodebase: true
