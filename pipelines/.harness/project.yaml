@@ -12,9 +12,8 @@ pipeline:
                 build: <+input>
     stages:
         - stage:
-              name: changed_name
+              name: changed_names
               identifier: test
-              description: ""
               type: CI
               spec:
                   cloneCodebase: true
@@ -34,4 +33,3 @@ pipeline:
                                     image: asfd
                                     command: exec ls
                                     privileged: false
-              variables: []
