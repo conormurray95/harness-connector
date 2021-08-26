@@ -1,0 +1,37 @@
+pipeline:
+    name: project
+    identifier: project
+    projectIdentifier: cmproj
+    orgIdentifier: FF_SDK_Tests
+    tags: {}
+    properties:
+        ci:
+            codebase:
+                connectorRef: testytest
+                repoName: harness-connector
+                build: <+input>
+    stages:
+        - stage:
+              name: test
+              identifier: test
+              description: ""
+              type: CI
+              spec:
+                  cloneCodebase: true
+                  infrastructure:
+                      type: KubernetesDirect
+                      spec:
+                          connectorRef: org.builfarm
+                          namespace: asdf
+                  execution:
+                      steps:
+                          - step:
+                                type: Run
+                                name: sdf
+                                identifier: sdf
+                                spec:
+                                    connectorRef: account.harnessImage
+                                    image: asfd
+                                    command: exec ls
+                                    privileged: false
+              variables: []
