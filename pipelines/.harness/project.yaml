@@ -12,7 +12,7 @@ pipeline:
                 build: <+input>
     stages:
         - stage:
-              name: changed_names
+              name: changed_namesss
               identifier: test
               type: CI
               spec:
