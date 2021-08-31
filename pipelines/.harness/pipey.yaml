@@ -1,0 +1,32 @@
+pipeline:
+    name: pipey
+    identifier: pipey
+    projectIdentifier: cmproj
+    orgIdentifier: FF_SDK_Tests
+    tags: {}
+    stages:
+        - stage:
+              name: approve
+              identifier: approve
+              description: ""
+              type: Approval
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                name: Approval
+                                identifier: approval
+                                type: HarnessApproval
+                                timeout: 1d
+                                spec:
+                                    approvalMessage: |-
+                                        Please review the following information
+                                        and approve the pipeline progression
+                                    includePipelineExecutionHistory: true
+                                    approvers:
+                                        minimumCount: 1
+                                        disallowPipelineExecutor: false
+                                        userGroups:
+                                            - account.ug_hello
+                                    approverInputs: []
+              tags: {}
