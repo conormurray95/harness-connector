@@ -6,7 +6,7 @@ pipeline:
     tags: {}
     stages:
         - stage:
-              name: approve
+              name: approveasdf
               identifier: approve
               description: ""
               type: Approval
@@ -14,7 +14,7 @@ pipeline:
                   execution:
                       steps:
                           - step:
-                                name: Approval
+                                name: Approvalasdf
                                 identifier: approval
                                 type: HarnessApproval
                                 timeout: 1d
