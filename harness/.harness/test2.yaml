@@ -14,7 +14,7 @@ pipeline:
                   execution:
                       steps:
                           - step:
-                                name: Approval
+                                name: Approvalzsdf
                                 identifier: approval
                                 type: HarnessApproval
                                 timeout: 1d
