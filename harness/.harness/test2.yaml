@@ -1,5 +1,5 @@
 pipeline:
-    name: test2
+    name: test25
     identifier: test2
     projectIdentifier: cmproj
     orgIdentifier: default
