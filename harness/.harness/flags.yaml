@@ -38,6 +38,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: asdfasdfasdfsdffff
+    identifier: asdfasdfasdfsdffff
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: asdfsadfsadf
     identifier: asdfsadfsadf
     description: ""
@@ -247,6 +266,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: dfgsdfgdfgdsfg
+    identifier: dfgsdfgdfgdsfg
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: dghsdf
     identifier: dghsdf
     description: ""
@@ -306,6 +344,25 @@ flags:
 - flag:
     name: kijhgfderwtyh
     identifier: kijhgfderwtyh
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: kjhgfd
+    identifier: kjhgfd
     description: ""
     projectIdentifier: cmproj
     orgIdentifier: default
@@ -665,6 +722,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: vvvvvvvvvvv
+    identifier: vvvvvvvvvvv
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: xcv
     identifier: xcv
     description: ""
@@ -686,6 +762,44 @@ flags:
 - flag:
     name: zzz
     identifier: zzz
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: zzzzz
+    identifier: zzzzz
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: zzzzzzzzzz
+    identifier: zzzzzzzzzz
     description: ""
     projectIdentifier: cmproj
     orgIdentifier: default
