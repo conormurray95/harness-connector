@@ -1,0 +1,20 @@
+flags:
+- flag:
+    name: testflag
+    identifier: testflag
+    description: ""
+    projectIdentifier: gitsyncflow
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
