@@ -513,6 +513,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: lflflwpwpwpdlfkg
+    identifier: lflflwpwpwpdlfkg
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: lslslsls
     identifier: lslslsls
     description: ""
