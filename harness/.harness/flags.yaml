@@ -247,6 +247,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: bbbbbtttt
+    identifier: bbbbbtttt
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: bbbdgdfb
     identifier: bbbdgdfb
     description: ""
@@ -532,6 +551,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: mmmmllll
+    identifier: mmmmllll
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: mmmmm
     identifier: mmmmm
     description: ""
@@ -741,6 +779,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: qqqqwwerr
+    identifier: qqqqwwerr
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: rtyuikl
     identifier: rtyuikl
     description: ""
@@ -933,6 +990,25 @@ flags:
 - flag:
     name: vvvvvvvvvvv
     identifier: vvvvvvvvvvv
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: wertertrewyyy
+    identifier: wertertrewyyy
     description: ""
     projectIdentifier: cmproj
     orgIdentifier: default
