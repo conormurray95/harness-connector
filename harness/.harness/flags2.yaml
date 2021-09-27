@@ -1,1 +1,20 @@
-flags: []
+flags:
+- flag:
+    name: oneflag
+    identifier: oneflag
+    description: ""
+    projectIdentifier: gitsyncflow
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
