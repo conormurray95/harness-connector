@@ -95,6 +95,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: asdfsadf
+    identifier: asdfsadf
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: asdfsadfsadf
     identifier: asdfsadfsadf
     description: ""
@@ -667,6 +686,25 @@ flags:
 - flag:
     name: oiuytrds
     identifier: oiuytrds
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: ppkpkpkpkpk
+    identifier: ppkpkpkpkpk
     description: ""
     projectIdentifier: cmproj
     orgIdentifier: default
