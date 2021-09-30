@@ -836,6 +836,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: nvnmdmdks
+    identifier: nvnmdmdks
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: nvnv
     identifier: nvnv
     description: ""
