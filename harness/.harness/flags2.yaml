@@ -1,1 +1,39 @@
-flags: []
+flags:
+- flag:
+    name: firstflag
+    identifier: firstflag
+    description: ""
+    projectIdentifier: gitsyncflow
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: secondlfag
+    identifier: secondlfag
+    description: ""
+    projectIdentifier: gitsyncflow
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
