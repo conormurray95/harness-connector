@@ -19,6 +19,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: ldldjgfjf
+    identifier: ldldjgfjf
+    description: ""
+    projectIdentifier: gitsyncflow
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: myfirstflag
     identifier: myfirstflag
     description: ""
