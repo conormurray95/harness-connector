@@ -1,32 +1,28 @@
 pipeline:
-    name: xcbasdfsde
-    identifier: xcb
-    projectIdentifier: cmproj
-    orgIdentifier: default
-    tags: {}
     stages:
         - stage:
-              name: xcvb
-              identifier: xcvb
-              description: ""
               type: Approval
               spec:
                   execution:
                       steps:
                           - step:
-                                name: Approval
-                                identifier: approval
                                 type: HarnessApproval
                                 timeout: 1d
                                 spec:
+                                    includePipelineExecutionHistory: true
+                                    approvers:
+                                        userGroups:
+                                            - account.approvers
+                                        minimumCount: 1
+                                        disallowPipelineExecutor: false
                                     approvalMessage: |-
                                         Please review the following information
                                         and approve the pipeline progression
-                                    includePipelineExecutionHistory: true
-                                    approvers:
-                                        minimumCount: 1
-                                        disallowPipelineExecutor: false
-                                        userGroups:
-                                            - account.approvers
-                                    approverInputs: []
-              tags: {}
+                                name: Approval
+                                identifier: approval
+              name: xcvb
+              identifier: xcvb
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    name: xcbbb
+    identifier: xcb
