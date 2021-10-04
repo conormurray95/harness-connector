@@ -38,6 +38,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: asdfasdfafsdf
+    identifier: asdfasdfafsdf
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: asdfasdfasdf
     identifier: asdfasdfasdf
     description: ""
@@ -173,6 +192,25 @@ flags:
 - flag:
     name: asdfsdfasdfaaa
     identifier: asdfsdfasdfaaa
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: asdfsdffdsafdff
+    identifier: asdfsdffdsafdff
     description: ""
     projectIdentifier: cmproj
     orgIdentifier: default
@@ -496,6 +534,25 @@ flags:
 - flag:
     name: dsfgsdgf
     identifier: dsfgsdgf
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: fkfkfldldkf
+    identifier: fkfkfldldkf
     description: ""
     projectIdentifier: cmproj
     orgIdentifier: default
@@ -1123,6 +1180,25 @@ flags:
 - flag:
     name: sadfasdf
     identifier: sadfasdf
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: sdadsd
+    identifier: sdadsd
     description: ""
     projectIdentifier: cmproj
     orgIdentifier: default
