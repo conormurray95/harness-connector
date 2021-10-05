@@ -24,5 +24,6 @@ pipeline:
               identifier: asdf
     projectIdentifier: cmproj
     orgIdentifier: default
-    name: testpipeline
+    name: testpipeline2
     identifier: mamam
+    tags: {}
