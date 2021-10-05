@@ -38,25 +38,6 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
-    name: test
-    identifier: test
-    description: ""
-    projectIdentifier: cmproj
-    orgIdentifier: default
-    permanent: false
-    spec:
-      flagKind: boolean
-      default:
-        onVariation: "true"
-        offVariation: "false"
-      variations:
-      - variation:
-          identifier: "true"
-          value: "true"
-      - variation:
-          identifier: "false"
-          value: "false"
-- flag:
     name: asdfasdfafsdf
     identifier: asdfasdfafsdf
     description: ""
@@ -116,6 +97,25 @@ flags:
 - flag:
     name: asdfasdfsdf
     identifier: asdfasdfsdf
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: asdfffffadfs
+    identifier: asdfffffadfs
     description: ""
     projectIdentifier: cmproj
     orgIdentifier: default
@@ -285,6 +285,25 @@ flags:
           identifier: "false"
           value: "false"
 - flag:
+    name: Asdsadsdsadas
+    identifier: Asdsadsdsadas
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: asef
     identifier: asef
     description: ""
@@ -401,6 +420,25 @@ flags:
 - flag:
     name: cvbnmkjhgf
     identifier: cvbnmkjhgf
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: Dark mode
+    identifier: Dark_mode
     description: ""
     projectIdentifier: cmproj
     orgIdentifier: default
@@ -561,6 +599,25 @@ flags:
       flagKind: boolean
       default:
         onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
+    name: Enable Premium
+    identifier: Enable_Premium
+    description: ""
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "false"
         offVariation: "false"
       variations:
       - variation:
@@ -1120,6 +1177,37 @@ flags:
       - variation:
           identifier: "false"
           value: "false"
+- flag:
+    name: Profile Colour
+    identifier: Profile_Colour
+    description: Select profile page colour
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: string
+      default:
+        onVariation: white
+        offVariation: white
+      variations:
+      - variation:
+          identifier: red
+          value: red
+      - variation:
+          identifier: blue
+          value: blue
+      - variation:
+          identifier: green
+          value: green
+      - variation:
+          identifier: pink
+          value: pink
+      - variation:
+          identifier: orange
+          value: orange
+      - variation:
+          identifier: white
+          value: white
 - flag:
     name: pwoowooe
     identifier: pwoowooe
