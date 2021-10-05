@@ -24,6 +24,6 @@ pipeline:
               identifier: asdf
     projectIdentifier: cmproj
     orgIdentifier: default
-    name: testpipeline2
+    name: gittoharness
     identifier: mamam
     tags: {}
