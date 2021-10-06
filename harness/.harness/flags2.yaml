@@ -1,5 +1,24 @@
 flags:
 - flag:
+    name: asdf
+    identifier: asdf
+    description: ""
+    projectIdentifier: gitsyncflow
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+- flag:
     name: asdfasdfasdfsdf
     identifier: asdfasdfasdfsdf
     description: ""
