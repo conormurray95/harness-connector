@@ -18,3 +18,13 @@ flags:
       - variation:
           identifier: "false"
           value: "false"
+    environments:
+    - environment:
+        name: test
+        identifier: test
+        description: test
+        default:
+          defaultServe:
+            serveVariation: "true"
+          offVariation: "false"
+        state: "on"
