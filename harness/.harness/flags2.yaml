@@ -58,7 +58,7 @@ flags:
           offVariation: "false"
         state: "off"
 - flag:
-    name: testfleg
+    name: Updated Name
     identifier: testfleg
     description: ""
     projectIdentifier: gitsyncflow
