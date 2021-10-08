@@ -18,12 +18,11 @@ pipeline:
                                     approvalMessage: |-
                                         Please review the following information
                                         and approve the pipeline progression
-                                name: Approvalss
+                                name: Approval
                                 identifier: approval
               name: xcvb
               identifier: xcvb
     projectIdentifier: cmproj
     orgIdentifier: default
-    name: xcbbbb
+    name: xcbbbbb
     identifier: xcb
-    tags: {}
