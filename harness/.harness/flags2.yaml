@@ -28,3 +28,5 @@ flags:
             serveVariation: "true"
           offVariation: "false"
         state: "off"
+    projectIdentifier: gitsyncflow
+    orgIdentifier: default
