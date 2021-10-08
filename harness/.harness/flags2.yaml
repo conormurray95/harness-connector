@@ -1,6 +1,6 @@
 flags:
 - flag:
-    name: testflag3
+    name: testflag1
     identifier: hdhdhdhd
     description: ""
     projectIdentifier: gitsyncflow
