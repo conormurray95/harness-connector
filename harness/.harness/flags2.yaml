@@ -1,10 +1,8 @@
 flags:
 - flag:
-    name: changed11
+    name: hdhdhdhd
     identifier: hdhdhdhd
     description: ""
-    projectIdentifier: gitsyncflow
-    orgIdentifier: default
     permanent: false
     spec:
       flagKind: boolean
@@ -28,3 +26,32 @@ flags:
             serveVariation: "true"
           offVariation: "false"
         state: "off"
+- flag:
+    name: newfleg
+    identifier: newfleg
+    description: ""
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+    environments:
+    - environment:
+        name: test
+        identifier: test
+        description: test
+        default:
+          defaultServe:
+            serveVariation: "true"
+          offVariation: "false"
+        state: "off"
+projectIdentifier: gitsyncflow
+orgIdentifier: default
