@@ -1,57 +1,58 @@
-flags:
-- flag:
-    name: testupdate3
-    identifier: hdhdhdhd
-    description: ""
-    permanent: false
-    spec:
-      flagKind: boolean
-      default:
-        onVariation: "true"
-        offVariation: "false"
-      variations:
-      - variation:
-          identifier: "true"
-          value: "true"
-      - variation:
-          identifier: "false"
-          value: "false"
-    environments:
-    - environment:
-        name: test
-        identifier: test
-        description: test
+featureFlags:
+  flags:
+  - flag:
+      name: hdhdhdhd
+      identifier: hdhdhdhd
+      description: ""
+      permanent: false
+      spec:
+        flagKind: boolean
         default:
-          defaultServe:
-            serveVariation: "true"
+          onVariation: "true"
           offVariation: "false"
-        state: "off"
-- flag:
-    name: newfleg
-    identifier: newfleg
-    description: ""
-    permanent: false
-    spec:
-      flagKind: boolean
-      default:
-        onVariation: "true"
-        offVariation: "false"
-      variations:
-      - variation:
-          identifier: "true"
-          value: "true"
-      - variation:
-          identifier: "false"
-          value: "false"
-    environments:
-    - environment:
-        name: test
-        identifier: test
-        description: test
+        variations:
+        - variation:
+            identifier: "true"
+            value: "true"
+        - variation:
+            identifier: "false"
+            value: "false"
+      environments:
+      - environment:
+          name: test
+          identifier: test
+          description: test
+          default:
+            defaultServe:
+              serveVariation: "true"
+            offVariation: "false"
+          state: "off"
+  - flag:
+      name: newfleg
+      identifier: newfleg
+      description: ""
+      permanent: false
+      spec:
+        flagKind: boolean
         default:
-          defaultServe:
-            serveVariation: "true"
+          onVariation: "true"
           offVariation: "false"
-        state: "off"
-projectIdentifier: gitsyncflow
-orgIdentifier: default
+        variations:
+        - variation:
+            identifier: "true"
+            value: "true"
+        - variation:
+            identifier: "false"
+            value: "false"
+      environments:
+      - environment:
+          name: test
+          identifier: test
+          description: test
+          default:
+            defaultServe:
+              serveVariation: "true"
+            offVariation: "false"
+          state: "on"
+  projectIdentifier: gitsyncflow
+  orgIdentifier: default
