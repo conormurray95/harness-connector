@@ -1,4 +1,4 @@
-flags:
+featureFlags:
   flags:
   - flag:
       name: hdhh
