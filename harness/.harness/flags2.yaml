@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: newflag
+      name: hdhdhdhd
       identifier: hdhdhdhd
       description: ""
       permanent: false
@@ -53,6 +53,6 @@ featureFlags:
             defaultServe:
               serveVariation: "true"
             offVariation: "false"
-          state: "off"
+          state: "on"
   projectIdentifier: gitsyncflow
   orgIdentifier: default
