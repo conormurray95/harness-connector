@@ -56,4 +56,4 @@ flags:
           defaultServe:
             serveVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
