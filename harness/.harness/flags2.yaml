@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: ahahaa
+      name: ah
       identifier: hdh
       description: ""
       permanent: false
