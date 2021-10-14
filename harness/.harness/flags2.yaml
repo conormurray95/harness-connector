@@ -1,6 +1,6 @@
 flags:
 - flag:
-    name: hdh
+    name: hdhdhdhd
     identifier: hdhdhdhd
     description: ""
     projectIdentifier: gitsyncflow
@@ -56,4 +56,4 @@ flags:
           defaultServe:
             serveVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
