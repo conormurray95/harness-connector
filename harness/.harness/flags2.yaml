@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: hdhdhdhd
+      name: newflag
       identifier: hdhdhdhd
       description: ""
       permanent: false
