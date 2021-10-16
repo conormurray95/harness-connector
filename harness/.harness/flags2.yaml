@@ -1,58 +1,162 @@
-featureFlags:
-  flags:
-  - flag:
-      name: hdhdhdhd
-      identifier: hdhdhdhd
-      description: ""
-      permanent: false
-      spec:
-        flagKind: boolean
+flags:
+- flag:
+    name: BoolFlag
+    identifier: BoolFlag
+    description: ""
+    projectIdentifier: FFdevqa
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: boolean
+      default:
+        onVariation: "true"
+        offVariation: "false"
+      variations:
+      - variation:
+          identifier: "true"
+          value: "true"
+      - variation:
+          identifier: "false"
+          value: "false"
+    environments:
+    - environment:
+        name: Production
+        identifier: Production
+        description: ""
         default:
-          onVariation: "true"
+          defaultServe:
+            serveVariation: "true"
           offVariation: "false"
-        variations:
-        - variation:
-            identifier: "true"
-            value: "true"
-        - variation:
-            identifier: "false"
-            value: "false"
-      environments:
-      - environment:
-          name: test
-          identifier: test
-          description: test
-          default:
-            defaultServe:
-              serveVariation: "true"
-            offVariation: "false"
-          state: "off"
-  - flag:
-      name: newfleg
-      identifier: newfleg
-      description: ""
-      permanent: false
-      spec:
-        flagKind: boolean
+        state: "on"
+        variationTargetMaps:
+        - variationTargetMap:
+            targets:
+            - target:
+                identifier: harness
+                name: harness
+            variation: "true"
+    - environment:
+        name: Test
+        identifier: Test
+        description: ""
         default:
-          onVariation: "true"
+          defaultServe:
+            serveVariation: "true"
           offVariation: "false"
+        state: "off"
+- flag:
+    name: NumberFlag
+    identifier: NumberFlag
+    description: ""
+    projectIdentifier: FFdevqa
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: int
+      default:
+        onVariation: Value1
+        offVariation: Value2
+      variations:
+      - variation:
+          identifier: Value1
+          value: "1"
+      - variation:
+          identifier: Value2
+          value: "2"
+    prerequisites:
+    - prerequisite:
+        flagIdentifier: BoolFlag
         variations:
-        - variation:
-            identifier: "true"
-            value: "true"
-        - variation:
-            identifier: "false"
-            value: "false"
-      environments:
-      - environment:
-          name: test
-          identifier: test
-          description: test
-          default:
-            defaultServe:
-              serveVariation: "true"
-            offVariation: "false"
-          state: "on"
-  projectIdentifier: gitsyncflow
-  orgIdentifier: default
+        - variation: "false"
+    environments:
+    - environment:
+        name: Production
+        identifier: Production
+        description: ""
+        default:
+          defaultServe:
+            serveVariation: Value1
+          offVariation: Value2
+        state: "on"
+    - environment:
+        name: Test
+        identifier: Test
+        description: ""
+        default:
+          defaultServe:
+            serveVariation: Value1
+          offVariation: Value2
+        state: "off"
+        variationTargetMaps:
+        - variationTargetMap:
+            targetGroups:
+            - targetGroup:
+                identifier: otherCompanies
+                name: otherCompanies
+            variation: Value1
+- flag:
+    name: StringFlag
+    identifier: StringFlag
+    description: ""
+    projectIdentifier: FFdevqa
+    orgIdentifier: default
+    permanent: false
+    spec:
+      flagKind: string
+      default:
+        onVariation: "On"
+        offVariation: "Off"
+      variations:
+      - variation:
+          identifier: "On"
+          value: "on"
+      - variation:
+          identifier: "Off"
+          value: "off"
+      - variation:
+          identifier: Neither
+          value: neither
+    environments:
+    - environment:
+        name: Production
+        identifier: Production
+        description: ""
+        default:
+          defaultServe:
+            serveVariation: "On"
+          offVariation: "Off"
+        state: "off"
+    - environment:
+        name: Test
+        identifier: Test
+        description: ""
+        default:
+          defaultServe:
+            serveVariation: "On"
+          offVariation: "Off"
+        state: "on"
+        rules:
+        - rule:
+            ruleId: 1c5100be-f69f-4bd2-8bdf-d4c5c363a802
+            priority: 1
+            serve:
+              distribution:
+                bucketBy: identifier
+                variations:
+                - variation:
+                    weight: 33
+                    variation: Neither
+                - variation:
+                    weight: 33
+                    variation: "Off"
+                - variation:
+                    weight: 33
+                    variation: "On"
+            clauses:
+            - clause:
+                attribute: identifier
+                id: bde6c92e-d180-4d84-8bf5-22d027031032
+                negate: false
+                op: starts_with
+                values:
+                - value: harness
