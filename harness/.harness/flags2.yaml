@@ -120,6 +120,30 @@ featureFlags:
                   identifier: target2
               variation: blue
   - flag:
+      name: multinotbool
+      identifier: multinotbool
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        variations:
+        - variation:
+            identifier: "true"
+            value: "true"
+        - variation:
+            identifier: "false"
+            value: "false"
+      environments:
+      - environment:
+          identifier: test
+          default:
+            onVariation: "true"
+            offVariation: "true"
+          state: "off"
+  - flag:
       name: newfleg
       identifier: newfleg
       description: ""
