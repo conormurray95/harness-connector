@@ -24,8 +24,8 @@ featureFlags:
             onVariation: "true"
             offVariation: "false"
           state: "off"
-          variationTargetMaps:
-          - variationTargetMap:
+          targetRules:
+          - targetRule:
               targetGroups:
               - targetGroup:
                   identifier: group1
@@ -65,7 +65,7 @@ featureFlags:
           default:
             onVariation: red
             offVariation: yellow
-          state: "off"
+          state: "on"
           rules:
           - rule:
               ruleId: b415ff5c-be21-42a9-9008-4f7b1ab2b9df
@@ -107,8 +107,8 @@ featureFlags:
                   op: starts_with
                   values:
                   - value: conor
-          variationTargetMaps:
-          - variationTargetMap:
+          targetRules:
+          - targetRule:
               targetGroups:
               - targetGroup:
                   identifier: group1
