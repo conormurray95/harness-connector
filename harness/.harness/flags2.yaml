@@ -29,7 +29,6 @@ featureFlags:
               targetGroups:
               - targetGroup:
                   identifier: group1
-                  name: group1
               variation: "true"
   - flag:
       name: multi
@@ -65,7 +64,7 @@ featureFlags:
           default:
             onVariation: red
             offVariation: yellow
-          state: "off"
+          state: "on"
           rules:
           - rule:
               ruleId: b415ff5c-be21-42a9-9008-4f7b1ab2b9df
@@ -112,17 +111,13 @@ featureFlags:
               targetGroups:
               - targetGroup:
                   identifier: group1
-                  name: group1
               targets:
               - target:
                   identifier: target1
-                  name: target1
               - target:
                   identifier: target3
-                  name: target3
               - target:
                   identifier: target2
-                  name: target2
               variation: blue
   - flag:
       name: newfleg
