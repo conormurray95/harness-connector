@@ -101,6 +101,12 @@ featureFlags:
               - target:
                   identifier: target1
                   name: target1
+              - target:
+                  identifier: target3
+                  name: target3
+              - target:
+                  identifier: target2
+                  name: target2
               variation: blue
           - variationTargetMap:
               targetGroups:
