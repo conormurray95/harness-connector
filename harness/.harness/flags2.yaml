@@ -60,6 +60,34 @@ featureFlags:
               serveVariation: red
             offVariation: yellow
           state: "off"
+          rules:
+          - rule:
+              ruleId: b415ff5c-be21-42a9-9008-4f7b1ab2b9df
+              priority: 1
+              serve:
+                distribution:
+                  bucketBy: identifier
+                  variations:
+                  - variation:
+                      weight: 25
+                      variation: red
+                  - variation:
+                      weight: 25
+                      variation: blue
+                  - variation:
+                      weight: 25
+                      variation: green
+                  - variation:
+                      weight: 25
+                      variation: yellow
+              clauses:
+              - clause:
+                  attribute: identifier
+                  id: 999ea40c-807d-45a8-bf6a-d08d2865c4b5
+                  negate: false
+                  op: starts_with
+                  values:
+                  - value: harness
           variationTargetMaps:
           - variationTargetMap:
               targets:
