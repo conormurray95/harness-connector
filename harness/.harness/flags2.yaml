@@ -64,10 +64,9 @@ featureFlags:
           default:
             onVariation: red
             offVariation: yellow
-          state: "on"
+          state: "off"
           rules:
           - rule:
-              ruleId: b415ff5c-be21-42a9-9008-4f7b1ab2b9df
               priority: 1
               serve:
                 distribution:
@@ -88,20 +87,17 @@ featureFlags:
               clauses:
               - clause:
                   attribute: identifier
-                  id: 999ea40c-807d-45a8-bf6a-d08d2865c4b5
                   negate: false
                   op: starts_with
                   values:
                   - value: harness
           - rule:
-              ruleId: 2b5bc5d6-b8b9-4f4f-9040-1d278424b419
               priority: 2
               serve:
                 serveVariation: green
               clauses:
               - clause:
                   attribute: name
-                  id: 5deb24cf-8b64-4dc5-a570-36f4a64579b3
                   negate: false
                   op: starts_with
                   values:
