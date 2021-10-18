@@ -57,6 +57,11 @@ featureFlags:
         - variation:
             identifier: yellow
             value: yellow
+      prerequisites:
+      - prerequisite:
+          flagIdentifier: newfleg
+          variations:
+          - variation: "true"
       environments:
       - environment:
           name: test
