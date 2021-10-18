@@ -27,6 +27,13 @@ featureFlags:
               serveVariation: "true"
             offVariation: "false"
           state: "off"
+          variationTargetMaps:
+          - variationTargetMap:
+              targetGroups:
+              - targetGroup:
+                  identifier: group1
+                  name: group1
+              variation: "true"
   - flag:
       name: multi
       identifier: multi
