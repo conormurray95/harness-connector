@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: BoolFlag
+      name: BoolFlag2
       identifier: BoolFlag
       description: ""
       permanent: false
