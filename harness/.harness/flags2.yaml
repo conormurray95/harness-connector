@@ -6,7 +6,7 @@ featureFlags:
       description: ""
       permanent: false
       spec:
-        flagKind: boolean
+        type: boolean
         default:
           onVariation: "true"
           offVariation: "false"
@@ -19,12 +19,9 @@ featureFlags:
             value: "false"
       environments:
       - environment:
-          name: test
           identifier: test
-          description: test
           default:
-            defaultServe:
-              serveVariation: "true"
+            onVariation: "true"
             offVariation: "false"
           state: "off"
           variationTargetMaps:
@@ -40,7 +37,7 @@ featureFlags:
       description: ""
       permanent: false
       spec:
-        flagKind: string
+        type: string
         default:
           onVariation: red
           offVariation: green
@@ -64,14 +61,11 @@ featureFlags:
           - variation: "true"
       environments:
       - environment:
-          name: test
           identifier: test
-          description: test
           default:
-            defaultServe:
-              serveVariation: red
+            onVariation: red
             offVariation: yellow
-          state: "off"
+          state: "on"
           rules:
           - rule:
               ruleId: b415ff5c-be21-42a9-9008-4f7b1ab2b9df
@@ -104,7 +98,7 @@ featureFlags:
               ruleId: 2b5bc5d6-b8b9-4f4f-9040-1d278424b419
               priority: 2
               serve:
-                serveVariation: green
+                onVariation: green
               clauses:
               - clause:
                   attribute: name
@@ -136,7 +130,7 @@ featureFlags:
       description: ""
       permanent: false
       spec:
-        flagKind: boolean
+        type: boolean
         default:
           onVariation: "true"
           offVariation: "false"
@@ -149,12 +143,9 @@ featureFlags:
             value: "false"
       environments:
       - environment:
-          name: test
           identifier: test
-          description: test
           default:
-            defaultServe:
-              serveVariation: "true"
+            onVariation: "true"
             offVariation: "false"
           state: "on"
   projectIdentifier: gitsyncflow
