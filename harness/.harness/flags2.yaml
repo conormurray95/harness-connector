@@ -100,6 +100,19 @@ featureFlags:
                   op: starts_with
                   values:
                   - value: harness
+          - rule:
+              ruleId: 2b5bc5d6-b8b9-4f4f-9040-1d278424b419
+              priority: 2
+              serve:
+                serveVariation: green
+              clauses:
+              - clause:
+                  attribute: name
+                  id: 5deb24cf-8b64-4dc5-a570-36f4a64579b3
+                  negate: false
+                  op: starts_with
+                  values:
+                  - value: conor
           variationTargetMaps:
           - variationTargetMap:
               targetGroups:
