@@ -53,6 +53,6 @@ featureFlags:
             defaultServe:
               serveVariation: "true"
             offVariation: "false"
-          state: "off"
+          state: "on"
   projectIdentifier: gitsyncflow
   orgIdentifier: default
