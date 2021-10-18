@@ -28,6 +28,39 @@ featureFlags:
             offVariation: "false"
           state: "off"
   - flag:
+      name: multi
+      identifier: multi
+      description: ""
+      permanent: false
+      spec:
+        flagKind: string
+        default:
+          onVariation: red
+          offVariation: green
+        variations:
+        - variation:
+            identifier: red
+            value: red
+        - variation:
+            identifier: blue
+            value: blue
+        - variation:
+            identifier: green
+            value: green
+        - variation:
+            identifier: yellow
+            value: yellow
+      environments:
+      - environment:
+          name: test
+          identifier: test
+          description: test
+          default:
+            defaultServe:
+              serveVariation: red
+            offVariation: green
+          state: "off"
+  - flag:
       name: newfleg
       identifier: newfleg
       description: ""
