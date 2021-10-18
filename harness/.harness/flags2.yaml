@@ -97,6 +97,10 @@ featureFlags:
                   - value: harness
           variationTargetMaps:
           - variationTargetMap:
+              targetGroups:
+              - targetGroup:
+                  identifier: group1
+                  name: group1
               targets:
               - target:
                   identifier: target1
