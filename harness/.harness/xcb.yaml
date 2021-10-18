@@ -26,3 +26,4 @@ pipeline:
     orgIdentifier: default
     name: test11
     identifier: xcb
+    extraField: test
