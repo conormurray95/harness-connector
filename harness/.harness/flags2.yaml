@@ -95,6 +95,12 @@ featureFlags:
                   identifier: target1
                   name: target1
               variation: blue
+          - variationTargetMap:
+              targetGroups:
+              - targetGroup:
+                  identifier: group1
+                  name: group1
+              variation: yellow
   - flag:
       name: newfleg
       identifier: newfleg
