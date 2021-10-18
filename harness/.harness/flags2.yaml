@@ -108,12 +108,6 @@ featureFlags:
                   identifier: target2
                   name: target2
               variation: blue
-          - variationTargetMap:
-              targetGroups:
-              - targetGroup:
-                  identifier: group1
-                  name: group1
-              variation: yellow
   - flag:
       name: newfleg
       identifier: newfleg
