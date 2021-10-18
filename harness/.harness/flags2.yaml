@@ -65,7 +65,7 @@ featureFlags:
           default:
             onVariation: red
             offVariation: yellow
-          state: "on"
+          state: "off"
           rules:
           - rule:
               ruleId: b415ff5c-be21-42a9-9008-4f7b1ab2b9df
@@ -98,7 +98,7 @@ featureFlags:
               ruleId: 2b5bc5d6-b8b9-4f4f-9040-1d278424b419
               priority: 2
               serve:
-                onVariation: green
+                serveVariation: green
               clauses:
               - clause:
                   attribute: name
