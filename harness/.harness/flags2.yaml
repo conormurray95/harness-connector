@@ -60,6 +60,13 @@ featureFlags:
               serveVariation: red
             offVariation: yellow
           state: "off"
+          variationTargetMaps:
+          - variationTargetMap:
+              targets:
+              - target:
+                  identifier: target1
+                  name: target1
+              variation: blue
   - flag:
       name: newfleg
       identifier: newfleg
