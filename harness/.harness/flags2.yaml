@@ -58,7 +58,7 @@ featureFlags:
           default:
             defaultServe:
               serveVariation: red
-            offVariation: green
+            offVariation: yellow
           state: "off"
   - flag:
       name: newfleg
