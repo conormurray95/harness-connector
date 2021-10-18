@@ -64,7 +64,7 @@ featureFlags:
           default:
             onVariation: red
             offVariation: yellow
-          state: "off"
+          state: "on"
           rules:
           - rule:
               priority: 1
