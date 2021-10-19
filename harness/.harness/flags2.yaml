@@ -24,8 +24,7 @@ featureFlags:
         targetRules:
         - targetRule:
             targetGroups:
-            - targetGroup:
-                identifier: group1
+            - identifier: group1
             variation: "true"
   - flag:
       name: multi
@@ -97,15 +96,11 @@ featureFlags:
         targetRules:
         - targetRule:
             targetGroups:
-            - targetGroup:
-                identifier: group1
+            - identifier: group1
             targets:
-            - target:
-                identifier: target1
-            - target:
-                identifier: target3
-            - target:
-                identifier: target2
+            - identifier: target1
+            - identifier: target3
+            - identifier: target2
             variation: blue
   - flag:
       name: multinotbool
@@ -127,7 +122,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "true"
-        state: "on"
+        state: "off"
   - flag:
       name: newfleg
       identifier: newfleg
