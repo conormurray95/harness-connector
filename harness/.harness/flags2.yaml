@@ -56,42 +56,38 @@ featureFlags:
           offVariation: yellow
         state: "on"
         rules:
-        - rule:
-            priority: 1
-            serve:
-              distribution:
-                bucketBy: identifier
-                variations:
-                - variation:
-                    weight: 25
-                    variation: red
-                - variation:
-                    weight: 25
-                    variation: blue
-                - variation:
-                    weight: 25
-                    variation: green
-                - variation:
-                    weight: 25
-                    variation: yellow
-            clauses:
-            - clause:
-                attribute: identifier
-                negate: false
-                op: starts_with
-                values:
-                - value: harness
-        - rule:
-            priority: 2
-            serve:
-              serveVariation: green
-            clauses:
-            - clause:
-                attribute: name
-                negate: false
-                op: starts_with
-                values:
-                - value: conor
+        - priority: 1
+          serve:
+            distribution:
+              bucketBy: identifier
+              variations:
+              - variation:
+                  weight: 25
+                  variation: red
+              - variation:
+                  weight: 25
+                  variation: blue
+              - variation:
+                  weight: 25
+                  variation: green
+              - variation:
+                  weight: 25
+                  variation: yellow
+          clauses:
+          - attribute: identifier
+            negate: false
+            op: starts_with
+            values:
+            - value: harness
+        - priority: 2
+          serve:
+            serveVariation: green
+          clauses:
+          - attribute: name
+            negate: false
+            op: starts_with
+            values:
+            - value: conor
         targetRules:
         - targetRule:
             targetGroups:
@@ -121,7 +117,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "true"
-        state: "off"
+        state: "on"
   - flag:
       name: newfleg
       identifier: newfleg
