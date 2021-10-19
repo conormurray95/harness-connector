@@ -11,12 +11,10 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         variations:
-        - variation:
-            identifier: "true"
-            value: "true"
-        - variation:
-            identifier: "false"
-            value: "false"
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
       environments:
       - environment:
           identifier: test
@@ -41,18 +39,14 @@ featureFlags:
           onVariation: red
           offVariation: green
         variations:
-        - variation:
-            identifier: red
-            value: red
-        - variation:
-            identifier: blue
-            value: blue
-        - variation:
-            identifier: green
-            value: green
-        - variation:
-            identifier: yellow
-            value: yellow
+        - identifier: red
+          value: red
+        - identifier: blue
+          value: blue
+        - identifier: green
+          value: green
+        - identifier: yellow
+          value: yellow
       prerequisites:
       - prerequisite:
           flagIdentifier: newfleg
@@ -126,12 +120,10 @@ featureFlags:
           onVariation: "true"
           offVariation: "true"
         variations:
-        - variation:
-            identifier: "true"
-            value: "true"
-        - variation:
-            identifier: "false"
-            value: "false"
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
       environments:
       - environment:
           identifier: test
@@ -150,12 +142,10 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         variations:
-        - variation:
-            identifier: "true"
-            value: "true"
-        - variation:
-            identifier: "false"
-            value: "false"
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
       environments:
       - environment:
           identifier: test
