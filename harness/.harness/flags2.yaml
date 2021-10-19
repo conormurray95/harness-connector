@@ -22,10 +22,9 @@ featureFlags:
           offVariation: "false"
         state: "off"
         targetRules:
-        - targetRule:
-            targetGroups:
-            - identifier: group1
-            variation: "true"
+        - targetGroups:
+          - identifier: group1
+          variation: "true"
   - flag:
       name: multi
       identifier: multi
@@ -89,14 +88,13 @@ featureFlags:
             values:
             - value: conor
         targetRules:
-        - targetRule:
-            targetGroups:
-            - identifier: group1
-            targets:
-            - identifier: target1
-            - identifier: target3
-            - identifier: target2
-            variation: blue
+        - targetGroups:
+          - identifier: group1
+          targets:
+          - identifier: target1
+          - identifier: target3
+          - identifier: target2
+          variation: blue
   - flag:
       name: multinotbool
       identifier: multinotbool
@@ -117,7 +115,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "true"
-        state: "on"
+        state: "off"
   - flag:
       name: newfleg
       identifier: newfleg
