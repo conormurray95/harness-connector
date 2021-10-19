@@ -46,10 +46,9 @@ featureFlags:
         - identifier: yellow
           value: yellow
       prerequisites:
-      - prerequisite:
-          flagIdentifier: newfleg
-          variations:
-          - "true"
+      - flagIdentifier: newfleg
+        variations:
+        - "true"
       environments:
       - identifier: test
         default:
@@ -122,7 +121,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "true"
-        state: "on"
+        state: "off"
   - flag:
       name: newfleg
       identifier: newfleg
