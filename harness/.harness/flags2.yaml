@@ -16,18 +16,17 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - environment:
-          identifier: test
-          default:
-            onVariation: "true"
-            offVariation: "false"
-          state: "off"
-          targetRules:
-          - targetRule:
-              targetGroups:
-              - targetGroup:
-                  identifier: group1
-              variation: "true"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+        targetRules:
+        - targetRule:
+            targetGroups:
+            - targetGroup:
+                identifier: group1
+            variation: "true"
   - flag:
       name: multi
       identifier: multi
@@ -53,62 +52,61 @@ featureFlags:
           variations:
           - variation: "true"
       environments:
-      - environment:
-          identifier: test
-          default:
-            onVariation: red
-            offVariation: yellow
-          state: "on"
-          rules:
-          - rule:
-              priority: 1
-              serve:
-                distribution:
-                  bucketBy: identifier
-                  variations:
-                  - variation:
-                      weight: 25
-                      variation: red
-                  - variation:
-                      weight: 25
-                      variation: blue
-                  - variation:
-                      weight: 25
-                      variation: green
-                  - variation:
-                      weight: 25
-                      variation: yellow
-              clauses:
-              - clause:
-                  attribute: identifier
-                  negate: false
-                  op: starts_with
-                  values:
-                  - value: harness
-          - rule:
-              priority: 2
-              serve:
-                serveVariation: green
-              clauses:
-              - clause:
-                  attribute: name
-                  negate: false
-                  op: starts_with
-                  values:
-                  - value: conor
-          targetRules:
-          - targetRule:
-              targetGroups:
-              - targetGroup:
-                  identifier: group1
-              targets:
-              - target:
-                  identifier: target1
-              - target:
-                  identifier: target3
-              - target:
-                  identifier: target2
-              variation: blue
+      - identifier: test
+        default:
+          onVariation: red
+          offVariation: yellow
+        state: "on"
+        rules:
+        - rule:
+            priority: 1
+            serve:
+              distribution:
+                bucketBy: identifier
+                variations:
+                - variation:
+                    weight: 25
+                    variation: red
+                - variation:
+                    weight: 25
+                    variation: blue
+                - variation:
+                    weight: 25
+                    variation: green
+                - variation:
+                    weight: 25
+                    variation: yellow
+            clauses:
+            - clause:
+                attribute: identifier
+                negate: false
+                op: starts_with
+                values:
+                - value: harness
+        - rule:
+            priority: 2
+            serve:
+              serveVariation: green
+            clauses:
+            - clause:
+                attribute: name
+                negate: false
+                op: starts_with
+                values:
+                - value: conor
+        targetRules:
+        - targetRule:
+            targetGroups:
+            - targetGroup:
+                identifier: group1
+            targets:
+            - target:
+                identifier: target1
+            - target:
+                identifier: target3
+            - target:
+                identifier: target2
+            variation: blue
   - flag:
       name: multinotbool
       identifier: multinotbool
@@ -125,12 +123,11 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - environment:
-          identifier: test
-          default:
-            onVariation: "true"
-            offVariation: "true"
-          state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "on"
   - flag:
       name: newfleg
       identifier: newfleg
@@ -147,11 +144,10 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - environment:
-          identifier: test
-          default:
-            onVariation: "true"
-            offVariation: "false"
-          state: "on"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
   projectIdentifier: gitsyncflow
   orgIdentifier: default
