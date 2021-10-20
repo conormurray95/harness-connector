@@ -9,22 +9,21 @@ pipeline:
                                 type: HarnessApproval
                                 timeout: 1d
                                 spec:
+                                    includePipelineExecutionHistory: true
                                     approvers:
                                         userGroups:
                                             - account.approvers
                                         minimumCount: 1
                                         disallowPipelineExecutor: false
-                                    includePipelineExecutionHistory: true
                                     approvalMessage: |-
                                         Please review the following information
                                         and approve the pipeline progression
-                                identifier: approval
                                 name: Approval
+                                identifier: approval
               name: xcvb
               identifier: xcvb
     projectIdentifier: cmproj
     orgIdentifier: default
-    name: gitChange
+    name: harnessChange
     identifier: xcb
     extraField: test
-    tags: {}
