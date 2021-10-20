@@ -24,6 +24,7 @@ pipeline:
               identifier: xcvb
     projectIdentifier: cmproj
     orgIdentifier: default
-    name: test11
+    name: test10
     identifier: xcb
     extraField: test
+    tags: {}
