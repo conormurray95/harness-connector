@@ -24,7 +24,7 @@ pipeline:
               identifier: xcvb
     projectIdentifier: cmproj
     orgIdentifier: default
-    name: test10
+    name: gitChange
     identifier: xcb
     extraField: test
     tags: {}
