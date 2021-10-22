@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: extraflag
+      name: newflagname
       identifier: extraflag
       description: ""
       permanent: false
