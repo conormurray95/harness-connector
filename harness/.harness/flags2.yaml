@@ -1,6 +1,27 @@
 featureFlags:
   flags:
   - flag:
+      name: extraFlag
+      identifier: extraFlag
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+  - flag:
       name: hdhdhdhd
       identifier: hdhdhdhd
       description: ""
@@ -60,24 +81,20 @@ featureFlags:
             distribution:
               bucketBy: identifier
               variations:
-              - variation:
-                  weight: 25
-                  variation: red
-              - variation:
-                  weight: 25
-                  variation: blue
-              - variation:
-                  weight: 25
-                  variation: green
-              - variation:
-                  weight: 25
-                  variation: yellow
+              - weight: 25
+                variation: red
+              - weight: 25
+                variation: blue
+              - weight: 25
+                variation: green
+              - weight: 25
+                variation: yellow
           clauses:
           - attribute: identifier
             negate: false
             op: starts_with
             values:
-            - value: harness
+            - harness
         - priority: 2
           serve:
             serveVariation: green
@@ -86,7 +103,7 @@ featureFlags:
             negate: false
             op: starts_with
             values:
-            - value: conor
+            - conor
         targetRules:
         - targetGroups:
           - identifier: group1
