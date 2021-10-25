@@ -32,3 +32,7 @@ pipeline:
     identifier: xcb
     extraField: test
     tags: {}
+    variables:
+        - name: pipelinetest
+          type: String
+          value: ""
