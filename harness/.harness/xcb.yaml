@@ -13,7 +13,7 @@ pipeline:
                                     approvers:
                                         userGroups:
                                             - account.approvers
-                                        minimumCount: 1
+                                        minimumCount: <+input>
                                         disallowPipelineExecutor: false
                                     approverInputs: []
                                     approvalMessage: <+input>
