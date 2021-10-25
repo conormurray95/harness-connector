@@ -22,6 +22,10 @@ pipeline:
                                 identifier: approval
               name: xcvb
               identifier: xcvb
+              variables:
+                  - name: test
+                    type: String
+                    value: ""
     projectIdentifier: cmproj
     orgIdentifier: default
     name: harnessChange2
