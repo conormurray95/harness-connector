@@ -15,9 +15,8 @@ pipeline:
                                             - account.approvers
                                         minimumCount: 1
                                         disallowPipelineExecutor: false
-                                    approvalMessage: |-
-                                        Please review the following information
-                                        and approve the pipeline progression
+                                    approverInputs: []
+                                    approvalMessage: <+input>
                                 name: Approval
                                 identifier: approval
               name: xcvb
