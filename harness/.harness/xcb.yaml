@@ -13,25 +13,16 @@ pipeline:
                                     approvers:
                                         userGroups:
                                             - account.approvers
-                                        minimumCount: <+input>
                                         disallowPipelineExecutor: false
-                                    approverInputs: []
-                                    approvalMessage: <+input>
+                                        minimumCount: 1
+                                    approvalMessage: asfd
                                 name: Approval
                                 identifier: approval
               name: xcvb
               identifier: xcvb
-              variables:
-                  - name: test
-                    type: String
-                    value: ""
     projectIdentifier: cmproj
     orgIdentifier: default
-    name: harnessChange2
+    name: harnessChange3
     identifier: xcb
     extraField: test
     tags: {}
-    variables:
-        - name: pipelinetest
-          type: String
-          value: ""
