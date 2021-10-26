@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: extraflag2
+      name: extraflag
       identifier: extraflag
       description: ""
       permanent: false
@@ -153,6 +153,6 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
   projectIdentifier: gitsyncflow
   orgIdentifier: default
