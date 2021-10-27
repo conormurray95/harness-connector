@@ -1,0 +1,472 @@
+featureFlags:
+  flags:
+  - flag:
+      name: asdf
+      identifier: asdf
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: afd
+          offVariation: asdf
+        variations:
+        - identifier: afd
+          value: sadf
+        - identifier: asdf
+          value: sdff
+      environments:
+      - identifier: beta
+        default:
+          onVariation: afd
+          offVariation: asdf
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: afd
+          offVariation: asdf
+        state: "on"
+      - identifier: extra_env
+        default:
+          onVariation: afd
+          offVariation: asdf
+        state: "off"
+  - flag:
+      name: beta
+      identifier: beta
+      description: Enables beta features for users
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      tags:
+      - tag:
+          name: testing
+          value: testing
+      environments:
+      - identifier: beta
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+        targetRules:
+        - targetGroups:
+          - identifier: cloud
+          variation: "true"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: extra_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: bool
+      identifier: bool
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: beta
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: extra_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: bool3
+      identifier: bool3
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: beta
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: extra_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: bool4
+      identifier: bool4
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: beta
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: extra_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: bool5
+      identifier: bool5
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: beta
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: extra_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: Patched flag name
+      identifier: bool-flag1
+      description: Patched flag description
+      permanent: true
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: beta
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+        rules:
+        - priority: 110
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: at
+            negate: false
+            op: eq
+            values:
+            - alpha
+        targetRules:
+        - targets:
+          - identifier: target1
+          - identifier: target2
+          variation: "true"
+      - identifier: extra_env
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+  - flag:
+      name: Basic bool flag 3
+      identifier: bool-flag3
+      description: Basic boolean flag 3
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: beta
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: ""
+          offVariation: "true"
+        state: "off"
+      - identifier: extra_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: Patched flag name
+      identifier: bool-flag4
+      description: Patched flag description
+      permanent: true
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: beta
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+        rules:
+        - priority: 110
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: at
+            negate: false
+            op: eq
+            values:
+            - alpha
+        targetRules:
+        - targets:
+          - identifier: target1
+          - identifier: target2
+          variation: "true"
+      - identifier: extra_env
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+  - flag:
+      name: Patched flag name
+      identifier: bool-flag6
+      description: Patched flag description
+      permanent: true
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: beta
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+        rules:
+        - priority: 110
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: at
+            negate: false
+            op: eq
+            values:
+            - alpha
+        targetRules:
+        - targets:
+          - identifier: target1
+          - identifier: target2
+          variation: "true"
+      - identifier: extra_env
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+  - flag:
+      name: multi
+      identifier: multi
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: v1
+          offVariation: v2
+        variations:
+        - identifier: v1
+          value: v1
+        - identifier: v2
+          value: v2
+        - identifier: v3
+          value: v3
+      environments:
+      - identifier: beta
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "off"
+      - identifier: extra_env
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "off"
+  - flag:
+      name: Premium Feature
+      identifier: Premium_Feature
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      prerequisites:
+      - flagIdentifier: multi
+        variations:
+        - v1
+      environments:
+      - identifier: beta
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+        rules:
+        - priority: 1
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: premium
+            negate: false
+            op: equal
+            values:
+            - "true"
+        targetRules:
+        - targetGroups:
+          - identifier: default
+          variation: "true"
+      - identifier: extra_env
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+        rules:
+        - priority: 1
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: identifier
+            negate: false
+            op: starts_with
+            values:
+            - asdf
+        - priority: 2
+          serve:
+            serveVariation: "false"
+          clauses:
+          - attribute: email
+            negate: false
+            op: ends_with
+            values:
+            - harness.io
+        targetRules:
+        - targets:
+          - identifier: target1
+          variation: "true"
+  projectIdentifier: cmproj
+  orgIdentifier: FF_SDK_Tests
