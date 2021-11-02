@@ -20,7 +20,7 @@ featureFlags:
         default:
           onVariation: ""
           offVariation: "false"
-        state: "on"
+        state: "off"
   - flag:
       name: hdhdhdhd
       identifier: hdhdhdhd
