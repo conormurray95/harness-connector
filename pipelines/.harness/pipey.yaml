@@ -27,6 +27,7 @@ pipeline:
                                         minimumCount: 1
                                         disallowPipelineExecutor: false
                                         userGroups:
+                                            - approvers
                                             - account.ug_hello
                                     approverInputs: []
               tags: {}
