@@ -113,5 +113,28 @@ featureFlags:
           onVariation: ""
           offVariation: "false"
         state: "on"
+  - flag:
+      name: number
+      identifier: number
+      description: ""
+      permanent: false
+      spec:
+        type: int
+        default:
+          onVariation: one
+          offVariation: two
+        variations:
+        - identifier: one
+          value: "1"
+        - identifier: two
+          value: "2"
+        - identifier: three
+          value: "3"
+      environments:
+      - identifier: test
+        default:
+          onVariation: one
+          offVariation: two
+        state: "off"
   projectIdentifier: gitsyncflow
   orgIdentifier: default
