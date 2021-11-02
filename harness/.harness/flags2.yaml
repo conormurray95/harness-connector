@@ -43,6 +43,27 @@ featureFlags:
           offVariation: "false"
         state: "off"
   - flag:
+      name: json
+      identifier: json
+      description: ""
+      permanent: false
+      spec:
+        type: json
+        default:
+          onVariation: blob1
+          offVariation: blob1
+        variations:
+        - identifier: blob1
+          value: '{"field1": "value1"}'
+        - identifier: blob2
+          value: '{"field2": "value2"}'
+      environments:
+      - identifier: test
+        default:
+          onVariation: blob1
+          offVariation: blob1
+        state: "off"
+  - flag:
       name: multi
       identifier: multi
       description: ""
