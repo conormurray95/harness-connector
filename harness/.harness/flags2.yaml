@@ -21,6 +21,25 @@ featureFlags:
           onVariation: ""
           offVariation: "false"
         state: "on"
+        rules:
+        - priority: 2
+          serve:
+            serveVariation: "false"
+          clauses:
+          - attribute: identifier
+            negate: false
+            op: equal
+            values:
+            - asf
+        - priority: 100
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: identifier
+            negate: true
+            op: starts_with
+            values:
+            - test
   - flag:
       name: hdhdhdhd
       identifier: hdhdhdhd
@@ -133,7 +152,7 @@ featureFlags:
         default:
           onVariation: ""
           offVariation: "false"
-        state: "on"
+        state: "off"
   - flag:
       name: number
       identifier: number
@@ -156,6 +175,27 @@ featureFlags:
         default:
           onVariation: one
           offVariation: two
+        state: "off"
+  - flag:
+      name: sdf
+      identifier: sdf
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
         state: "off"
   projectIdentifier: gitsyncflow
   orgIdentifier: default
