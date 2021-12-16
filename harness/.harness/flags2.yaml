@@ -27,7 +27,6 @@ featureFlags:
             serveVariation: "false"
           clauses:
           - attribute: identifier
-            negate: false
             op: equal
             values:
             - asf
@@ -196,6 +195,6 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
   projectIdentifier: gitsyncflow
   orgIdentifier: default
