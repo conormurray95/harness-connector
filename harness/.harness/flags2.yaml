@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: extraflag3
       identifier: extraflag
-      description: "test"
+      description: ""
       permanent: false
       spec:
         type: boolean
@@ -195,6 +195,6 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
   projectIdentifier: gitsyncflow
   orgIdentifier: default
