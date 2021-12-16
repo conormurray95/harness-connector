@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: test
+      name: test2
       identifier: test
       description: testsdf4a
       permanent: false
