@@ -21,3 +21,5 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+  projectIdentifier: gitsyncflow
+  orgIdentifier: default
