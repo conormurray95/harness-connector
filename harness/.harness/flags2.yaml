@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: test
       identifier: test
-      description: "test5"
+      description: "test4"
       permanent: false
       spec:
         type: boolean
