@@ -20,9 +20,3 @@ pipeline:
                                 identifier: approval
               name: xcvb
               identifier: xcvb
-    projectIdentifier: cmproj
-    orgIdentifier: default
-    name: bleepblop2
-    identifier: xcb
-    extraField: test
-    tags: {}
