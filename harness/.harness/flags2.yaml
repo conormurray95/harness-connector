@@ -18,7 +18,7 @@ featureFlags:
       environments:
       - identifier: test
         default:
-          onVariation: ""
+          onVariation: "true"
           offVariation: "false"
         state: "on"
         rules:
@@ -57,7 +57,7 @@ featureFlags:
       environments:
       - identifier: test
         default:
-          onVariation: ""
+          onVariation: "true"
           offVariation: "false"
         state: "off"
   - flag:
@@ -107,7 +107,7 @@ featureFlags:
       environments:
       - identifier: test
         default:
-          onVariation: ""
+          onVariation: yellow
           offVariation: yellow
         state: "on"
   - flag:
@@ -128,7 +128,7 @@ featureFlags:
       environments:
       - identifier: test
         default:
-          onVariation: ""
+          onVariation: "true"
           offVariation: "true"
         state: "off"
   - flag:
@@ -149,7 +149,7 @@ featureFlags:
       environments:
       - identifier: test
         default:
-          onVariation: ""
+          onVariation: "true"
           offVariation: "false"
         state: "off"
   - flag:
