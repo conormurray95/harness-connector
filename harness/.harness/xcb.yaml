@@ -18,5 +18,5 @@ pipeline:
                                     approvalMessage: asfd
                                 name: Approval
                                 identifier: approval
-              name: xcvb
+              name: xcv
               identifier: xcvb
