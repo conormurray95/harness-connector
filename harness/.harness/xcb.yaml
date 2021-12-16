@@ -22,7 +22,7 @@ pipeline:
               identifier: xcvb
     projectIdentifier: cmproj
     orgIdentifier: default
-    name: harnessChange3
+    name: bleepblop
     identifier: xcb
     extraField: test
     tags: {}
