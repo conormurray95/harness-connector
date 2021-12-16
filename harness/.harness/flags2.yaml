@@ -80,7 +80,7 @@ featureFlags:
         default:
           onVariation: blob1
           offVariation: blob1
-        state: "off"
+        state: "on"
   - flag:
       name: multi
       identifier: multi
