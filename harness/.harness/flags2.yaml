@@ -16,7 +16,7 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: bloop
+      - identifier: test
         default:
           onVariation: "true"
           offVariation: "false"
