@@ -16,7 +16,7 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: BLOOPBLOPBLEEP
+      - identifier: BLOOPBLOPBLEEPBEEP
         default:
           onVariation: "true"
           offVariation: "false"
