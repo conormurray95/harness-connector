@@ -21,4 +21,4 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
-  orgIdentifier: default
+  orgIdentifier: defaul
