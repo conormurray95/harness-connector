@@ -20,6 +20,7 @@ pipeline:
                                 identifier: approval
               name: xcvb
               identifier: xcvb
+    orgIdentifier: default
     projectIdentifier: cmproj
     name: harnessChange3
     identifier: xcb
