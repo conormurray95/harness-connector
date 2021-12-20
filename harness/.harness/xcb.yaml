@@ -22,7 +22,7 @@ pipeline:
               identifier: xcvb
     orgIdentifier: default
     projectIdentifier: cmproj
-    name: harnessChange3
+    name: harnessChange2
     identifier: xcb
     extraField: test
     tags: {}
