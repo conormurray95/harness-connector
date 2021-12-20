@@ -16,10 +16,10 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: BLOOPBLOPBLEEPBEEPSCREE
+      - identifier: test
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
-  orgIdentifier: default
+        state: "off"
   projectIdentifier: gitsyncflow
+  orgIdentifier: default
