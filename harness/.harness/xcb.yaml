@@ -21,7 +21,6 @@ pipeline:
               name: xcvb
               identifier: xcvb
     projectIdentifier: cmproj
-    orgIdentifier: default
     name: harnessChange3
     identifier: xcb
     extraField: test
