@@ -1,5 +1,5 @@
 featureFlags:
-  flagss:
+  flags:
   - flag:
       name: test2
       identifier: test
