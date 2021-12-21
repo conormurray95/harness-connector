@@ -1,5 +1,5 @@
 pipeline:
-    stages:
+    stagess:
         - stage:
               type: Approval
               spec:
