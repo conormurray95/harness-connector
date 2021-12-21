@@ -21,4 +21,4 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-  projectIdentifier: gitsyncflow
+  projectIdentifier: gitsyncflo
