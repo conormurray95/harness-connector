@@ -3,21 +3,23 @@ featureFlags:
   - flag:
       name: test2
       identifier: test
+      description: blabla2
+      permanent: false
       spec:
-        type: bool
-        default:
-          onVariation: "spec"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "nyaz"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: test2
+        type: boolean
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
   projectIdentifier: gitsyncflow
   orgIdentifier: default
