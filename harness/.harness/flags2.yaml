@@ -3,20 +3,18 @@ featureFlags:
   - flag:
       name: test2
       identifier: test
-      description: blabla2
-      permanent: false
       spec:
-        type: boolean
+        type: bool
         default:
-          onVariation: "true"
+          onVariation: "spec"
           offVariation: "false"
         variations:
         - identifier: "true"
-          value: "true"
+          value: "nyaz"
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: test
+      - identifier: test2
         default:
           onVariation: "true"
           offVariation: "false"
