@@ -1,5 +1,5 @@
 featureFlags:
-  flags:
+  flagss:
   - flag:
       name: test2
       identifier: test
@@ -22,4 +22,4 @@ featureFlags:
           offVariation: "false"
         state: "off"
   projectIdentifier: gitsyncflow
-  orgIdentifier: defaultfff
+  orgIdentifier: default
