@@ -20,8 +20,8 @@ pipeline:
                                 identifier: approval
               name: xcvb
               identifier: xcvb
-    orgIdentifier: default
-    projectIdentifier: cmproj
+    orgIdentifier: defaultaSD
+    projectIdentifier: cmprojASDF
     name: harnessChange1
     identifier: xcb
     extraField: test
