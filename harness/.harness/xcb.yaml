@@ -16,6 +16,8 @@ pipeline:
                                         disallowPipelineExecutor: false
                                         minimumCount: 1
                                     approvalMessage: asfd
+                                name: Approval
+                                identifier: approval
               name: xcvb
               identifier: xcvb
     orgIdentifier: default
