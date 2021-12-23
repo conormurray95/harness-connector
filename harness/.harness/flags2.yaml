@@ -6,7 +6,7 @@ featureFlags:
       description: blabla
       permanent: false
       spec:
-        type: boolean
+        type: stys
         default:
           onVariation: "true"
           offVariation: "false"
