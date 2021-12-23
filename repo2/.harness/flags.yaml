@@ -22,27 +22,6 @@ featureFlags:
           offVariation: "false"
         state: "off"
   - flag:
-      name: bool4
-      identifier: bool4
-      description: ""
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-  - flag:
       name: bool5
       identifier: bool5
       description: ""
