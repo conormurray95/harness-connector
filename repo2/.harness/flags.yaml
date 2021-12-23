@@ -24,6 +24,29 @@ featureFlags:
           offVariation: v2
         state: "off"
   - flag:
+      name: multi2
+      identifier: multi2
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: test1
+          offVariation: test2
+        variations:
+        - identifier: test1
+          value: test1
+        - identifier: test2
+          value: test2
+        - identifier: test3
+          value: test3
+      environments:
+      - identifier: prod
+        default:
+          onVariation: test1
+          offVariation: test2
+        state: "off"
+  - flag:
       name: Premium Feature
       identifier: Premium_Feature
       description: ""
