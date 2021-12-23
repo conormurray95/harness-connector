@@ -1,27 +1,6 @@
 featureFlags:
   flags:
   - flag:
-      name: Basic bool flag 3
-      identifier: bool-flag3
-      description: Basic boolean flag 3
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: prod
-        default:
-          onVariation: ""
-          offVariation: "true"
-        state: "on"
-  - flag:
       name: multi
       identifier: multi
       description: ""
