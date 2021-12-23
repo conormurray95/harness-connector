@@ -13,7 +13,7 @@ featureFlags:
         variations:
         - identifier: v1
           value: v1
-        - identifier: v7
+        - identifier: v2
           value: v2
         - identifier: v3
           value: v3
@@ -47,7 +47,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
         targetRules:
         - targetGroups:
           - identifier: default
