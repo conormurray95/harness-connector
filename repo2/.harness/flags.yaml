@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: multi
       identifier: multi
-      description: ''
+      description: ' '
       permanent: false
       spec:
         type: string
@@ -48,6 +48,15 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+        rules:
+        - priority: 1
+          serve:
+            serveVariation: ""
+          clauses:
+          - attribute: identifier
+            op: equal
+            values:
+            - test
         targetRules:
         - targetGroups:
           - identifier: default
