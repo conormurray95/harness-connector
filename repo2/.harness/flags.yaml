@@ -141,41 +141,6 @@ featureFlags:
           offVariation: "true"
         state: "on"
   - flag:
-      name: Patched flag name
-      identifier: bool-flag4
-      description: Patched flag description
-      permanent: true
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "true"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "true"
-        state: "off"
-        rules:
-        - priority: 110
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: at
-            op: eq
-            values:
-            - alpha
-        targetRules:
-        - targets:
-          - identifier: target1
-          - identifier: target2
-          variation: "true"
-  - flag:
       name: multi
       identifier: multi
       description: ""
