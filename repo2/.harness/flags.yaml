@@ -23,6 +23,11 @@ featureFlags:
           onVariation: v1
           offVariation: v2
         state: "off"
+      - identifier: thirdenv
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "off"
   - flag:
       name: Premium Feature
       identifier: Premium_Feature
@@ -47,10 +52,15 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
         targetRules:
         - targetGroups:
           - identifier: default
           variation: "true"
+      - identifier: thirdenv
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
