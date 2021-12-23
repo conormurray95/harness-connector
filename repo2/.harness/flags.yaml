@@ -1,45 +1,6 @@
 featureFlags:
   flags:
   - flag:
-      name: beta
-      identifier: beta
-      description: Enables beta features for users
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      tags:
-      - tag:
-          name: testing
-          value: testing
-      environments:
-      - identifier: beta
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-        targetRules:
-        - targetGroups:
-          - identifier: cloud
-          variation: "true"
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-      - identifier: extra_env
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-  - flag:
       name: bool
       identifier: bool
       description: ""
