@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: multi
       identifier: multi
-      description: ""
+      description: "f"
       permanent: false
       spec:
         type: string
