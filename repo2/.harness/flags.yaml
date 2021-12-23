@@ -6,7 +6,7 @@ featureFlags:
       description: ""
       permanent: false
       spec:
-        type: string
+        type: stringg
         default:
           onVariation: v1
           offVariation: v2
