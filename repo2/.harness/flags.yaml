@@ -13,7 +13,7 @@ featureFlags:
         variations:
         - identifier: v1
           value: v1
-        - identifier: v2
+        - identifier: v7
           value: v2
         - identifier: v3
           value: v3
