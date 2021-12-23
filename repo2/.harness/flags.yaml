@@ -55,7 +55,7 @@ featureFlags:
         default:
           onVariation: v1
           offVariation: v2
-        state: "off"
+        state: "on"
   - flag:
       name: Premium Feature
       identifier: Premium_Feature
