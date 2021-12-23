@@ -231,7 +231,7 @@ featureFlags:
         state: "off"
       - identifier: prod
         default:
-          onVariation: "true"
+          onVariation: ""
           offVariation: "true"
         state: "off"
       - identifier: extra_env
@@ -391,7 +391,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
         rules:
         - priority: 1
           serve:
@@ -409,7 +409,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "true"
-        state: "off"
+        state: "on"
         rules:
         - priority: 1
           serve:
