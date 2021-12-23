@@ -392,15 +392,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
-        rules:
-        - priority: 1
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: premium
-            op: equal
-            values:
-            - "true"
         targetRules:
         - targetGroups:
           - identifier: default
