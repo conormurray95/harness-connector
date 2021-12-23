@@ -231,7 +231,7 @@ featureFlags:
         state: "off"
       - identifier: prod
         default:
-          onVariation: "true"
+          onVariation: ""
           offVariation: "true"
         state: "on"
       - identifier: extra_env
@@ -401,26 +401,5 @@ featureFlags:
           onVariation: "true"
           offVariation: "true"
         state: "on"
-        rules:
-        - priority: 1
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: identifier
-            op: starts_with
-            values:
-            - asdf
-        - priority: 2
-          serve:
-            serveVariation: "false"
-          clauses:
-          - attribute: email
-            op: ends_with
-            values:
-            - harness.io
-        targetRules:
-        - targets:
-          - identifier: target1
-          variation: "true"
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
