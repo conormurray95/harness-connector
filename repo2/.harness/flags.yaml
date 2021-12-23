@@ -1,37 +1,6 @@
 featureFlags:
   flags:
   - flag:
-      name: asdf
-      identifier: asdf
-      description: ""
-      permanent: false
-      spec:
-        type: string
-        default:
-          onVariation: afd
-          offVariation: asdf
-        variations:
-        - identifier: afd
-          value: sadf
-        - identifier: asdf
-          value: sdff
-      environments:
-      - identifier: beta
-        default:
-          onVariation: afd
-          offVariation: asdf
-        state: "off"
-      - identifier: prod
-        default:
-          onVariation: afd
-          offVariation: asdf
-        state: "on"
-      - identifier: extra_env
-        default:
-          onVariation: afd
-          offVariation: asdf
-        state: "off"
-  - flag:
       name: beta
       identifier: beta
       description: Enables beta features for users
@@ -226,7 +195,6 @@ featureFlags:
             serveVariation: "true"
           clauses:
           - attribute: at
-            negate: false
             op: eq
             values:
             - alpha
@@ -303,7 +271,6 @@ featureFlags:
             serveVariation: "true"
           clauses:
           - attribute: at
-            negate: false
             op: eq
             values:
             - alpha
@@ -349,7 +316,6 @@ featureFlags:
             serveVariation: "true"
           clauses:
           - attribute: at
-            negate: false
             op: eq
             values:
             - alpha
@@ -420,7 +386,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
       - identifier: prod
         default:
           onVariation: "true"
@@ -432,7 +398,6 @@ featureFlags:
             serveVariation: "true"
           clauses:
           - attribute: premium
-            negate: false
             op: equal
             values:
             - "true"
@@ -451,7 +416,6 @@ featureFlags:
             serveVariation: "true"
           clauses:
           - attribute: identifier
-            negate: false
             op: starts_with
             values:
             - asdf
@@ -460,7 +424,6 @@ featureFlags:
             serveVariation: "false"
           clauses:
           - attribute: email
-            negate: false
             op: ends_with
             values:
             - harness.io
