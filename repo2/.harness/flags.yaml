@@ -233,7 +233,7 @@ featureFlags:
         default:
           onVariation: ""
           offVariation: "true"
-        state: "off"
+        state: "on"
       - identifier: extra_env
         default:
           onVariation: "true"
@@ -391,7 +391,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
         targetRules:
         - targetGroups:
           - identifier: default
