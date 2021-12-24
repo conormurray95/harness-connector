@@ -6,7 +6,7 @@ featureFlags:
       description: blabla
       permanent: false
       spec:
-        type: stys
+        type: boolean
         default:
           onVariation: "true"
           offVariation: "false"
@@ -20,6 +20,6 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
-  orgIdentifier: default
+        state: "off"
   projectIdentifier: gitsyncflow
+  orgIdentifier: default
