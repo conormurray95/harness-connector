@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: multi
       identifier: multi
-      description: 'test'
+      description: test
       permanent: false
       spec:
         type: string
@@ -19,6 +19,11 @@ featureFlags:
           value: v3
       environments:
       - identifier: prod
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "off"
+      - identifier: prod6
         default:
           onVariation: v1
           offVariation: v2
@@ -52,5 +57,10 @@ featureFlags:
         - targetGroups:
           - identifier: default
           variation: "true"
+      - identifier: prod6
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
