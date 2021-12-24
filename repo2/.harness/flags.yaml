@@ -26,7 +26,7 @@ featureFlags:
   - flag:
       name: Premium Feature
       identifier: Premium_Feature
-      description: "test"
+      description: ""
       permanent: false
       spec:
         type: boolean
@@ -48,15 +48,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
-        rules:
-        - priority: 1
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: identifier
-            op: equal
-            values:
-            - test
         targetRules:
         - targetGroups:
           - identifier: default
