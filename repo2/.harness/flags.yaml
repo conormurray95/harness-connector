@@ -39,9 +39,9 @@ featureFlags:
         - identifier: "false"
           value: "false"
       prerequisites:
-      - flagIdentifier: multi
+      - flagIdentifier: multisadf
         variations:
-        - v1
+        - v72
       environments:
       - identifier: prod
         default:
