@@ -1,7 +1,6 @@
 pipeline:
     name: pipeyyyyasdf
     identifier: pipey
-    projectIdentifier: cmproj
     orgIdentifier: FF_SDK_Tests
     tags: {}
     stages:
