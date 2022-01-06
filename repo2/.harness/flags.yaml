@@ -52,5 +52,4 @@ featureFlags:
         - targetGroups:
           - identifier: default
           variation: "true"
-  projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
