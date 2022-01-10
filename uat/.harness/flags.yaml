@@ -21,5 +21,10 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   projectIdentifier: cmgittest
   orgIdentifier: default
