@@ -8,12 +8,18 @@ featureFlags:
       spec:
         type: boolean
         default:
-          onVariation: "truee"
+          onVariation: "true"
           offVariation: "false"
         variations:
         - identifier: "true"
           value: "true"
         - identifier: "false"
           value: "false"
+      environments:
+      - identifier: ""
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
   projectIdentifier: cmgittest
   orgIdentifier: default
