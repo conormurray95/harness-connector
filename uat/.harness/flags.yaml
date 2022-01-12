@@ -8,7 +8,7 @@ featureFlags:
       spec:
         type: boolean
         default:
-          onVariation: "truee"
+          onVariation: "true"
           offVariation: "false"
         variations:
         - identifier: "true"
@@ -25,6 +25,6 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
   projectIdentifier: cmgittest
   orgIdentifier: default
