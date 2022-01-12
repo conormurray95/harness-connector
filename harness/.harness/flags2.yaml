@@ -45,7 +45,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
   - flag:
       name: test2
       identifier: test
@@ -92,4 +92,5 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+  projectIdentifier: gitsyncflow
   orgIdentifier: default
