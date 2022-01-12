@@ -45,12 +45,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
-      - identifier: prod20
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
+        state: "on"
   - flag:
       name: test2
       identifier: test
@@ -93,11 +88,6 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod19
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod20
         default:
           onVariation: "true"
           offVariation: "false"
