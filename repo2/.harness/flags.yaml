@@ -8,7 +8,7 @@ featureFlags:
       spec:
         type: string
         default:
-          onVariation: v1
+          onVariation: v12
           offVariation: v2
         variations:
         - identifier: v1
