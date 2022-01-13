@@ -612,10 +612,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
-        targetRules:
-        - targets:
-          - identifier: conor
-          variation: "false"
   - flag:
       name: flag21
       identifier: flag21
@@ -718,6 +714,10 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+        targetRules:
+        - targets:
+          - identifier: conor
+          variation: "false"
   - flag:
       name: flag3
       identifier: flag3
