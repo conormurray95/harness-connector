@@ -115,6 +115,19 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+        rules:
+        - priority: 1
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: name
+            op: ends_with
+            values:
+            - test
+        targetRules:
+        - targets:
+          - identifier: james
+          variation: "false"
   - flag:
       name: flag12
       identifier: flag12
