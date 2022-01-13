@@ -462,7 +462,6 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: conor
-          - identifier: james
           variation: "false"
   - flag:
       name: flag19
@@ -518,6 +517,7 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: conor
+          - identifier: james
           variation: "false"
   - flag:
       name: flag2
