@@ -26,6 +26,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "true"
         state: "off"
+      - identifier: test3
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: multi
       identifier: multi
@@ -52,6 +57,11 @@ featureFlags:
           offVariation: string3
         state: "off"
       - identifier: test2
+        default:
+          onVariation: string1
+          offVariation: string2
+        state: "off"
+      - identifier: test3
         default:
           onVariation: string1
           offVariation: string2
