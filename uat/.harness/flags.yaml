@@ -25,42 +25,42 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
       - identifier: prod2
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
       - identifier: prod
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
       - identifier: dev
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
       - identifier: uat
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
       - identifier: qb
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
       - identifier: prod1
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
       - identifier: prod3
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
       - identifier: prod4
         default:
           onVariation: "true"
