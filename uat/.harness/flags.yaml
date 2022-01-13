@@ -61,6 +61,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: prod4
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: fifthflag
       identifier: fifthflag
@@ -118,6 +123,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod3
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod4
         default:
           onVariation: "true"
           offVariation: "false"
@@ -183,6 +193,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: prod4
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: fourthflag
       identifier: fourthflag
@@ -240,6 +255,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod3
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod4
         default:
           onVariation: "true"
           offVariation: "false"
@@ -305,6 +325,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: prod4
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: secondflag
       identifier: secondflag
@@ -362,6 +387,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod3
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod4
         default:
           onVariation: "true"
           offVariation: "false"
@@ -427,6 +457,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: prod4
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: sixthflag
       identifier: sixthflag
@@ -484,6 +519,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod3
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod4
         default:
           onVariation: "true"
           offVariation: "false"
@@ -549,6 +589,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+      - identifier: prod4
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: thirdflag
       identifier: thirdflag
@@ -606,6 +651,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod3
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod4
         default:
           onVariation: "true"
           offVariation: "false"
