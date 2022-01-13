@@ -243,10 +243,10 @@ featureFlags:
           serve:
             serveVariation: "true"
           clauses:
-          - attribute: identifier
-            op: starts_with
+          - attribute: ""
+            op: segmentMatch
             values:
-            - asd
+            - group
   - flag:
       name: testflag
       identifier: testflag
