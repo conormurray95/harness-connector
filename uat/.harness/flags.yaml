@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: eigthflag
       identifier: eigthflag
-      description: ""
+      description: "test"
       permanent: false
       spec:
         type: boolean
