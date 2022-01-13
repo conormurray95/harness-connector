@@ -26,5 +26,35 @@ featureFlags:
           onVariation: "true"
           offVariation: "true"
         state: "off"
+  - flag:
+      name: multi
+      identifier: multi
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: string1
+          offVariation: string2
+        variations:
+        - identifier: string1
+          value: string1
+        - identifier: string2
+          value: string2
+        - identifier: string3
+          value: string3
+        - identifier: string4
+          value: string4
+      environments:
+      - identifier: test
+        default:
+          onVariation: string1
+          offVariation: string2
+        state: "off"
+      - identifier: test2
+        default:
+          onVariation: string1
+          offVariation: string2
+        state: "off"
   projectIdentifier: ffm2032noenv
   orgIdentifier: default
