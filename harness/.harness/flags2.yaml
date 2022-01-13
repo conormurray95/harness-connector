@@ -51,6 +51,19 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+        rules:
+        - priority: 1
+          serve:
+            serveVariation: "false"
+          clauses:
+          - attribute: identifier
+            op: starts_with
+            values:
+            - con
+        targetRules:
+        - targets:
+          - identifier: dave
+          variation: "true"
   - flag:
       name: flag11
       identifier: flag11
