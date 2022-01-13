@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: eigthflag
       identifier: eigthflag
-      description: "test"
+      description: ""
       permanent: false
       spec:
         type: boolean
@@ -548,7 +548,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
   - flag:
       name: thirdflag
       identifier: thirdflag
