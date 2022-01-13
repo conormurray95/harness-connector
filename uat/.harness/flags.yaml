@@ -269,6 +269,15 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+        rules:
+        - priority: 1
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: identifier
+            op: starts_with
+            values:
+            - asd
   - flag:
       name: thirdflag
       identifier: thirdflag
