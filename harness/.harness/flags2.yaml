@@ -64,6 +64,11 @@ featureFlags:
         - targets:
           - identifier: dave
           variation: "true"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag11
       identifier: flag11
@@ -128,6 +133,11 @@ featureFlags:
         - targets:
           - identifier: james
           variation: "false"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag12
       identifier: flag12
@@ -175,6 +185,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod22
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod23
         default:
           onVariation: "true"
           offVariation: "false"
@@ -230,6 +245,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag14
       identifier: flag14
@@ -277,6 +297,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod22
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod23
         default:
           onVariation: "true"
           offVariation: "false"
@@ -332,6 +357,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag16
       identifier: flag16
@@ -383,6 +413,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag17
       identifier: flag17
@@ -430,6 +465,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod22
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod23
         default:
           onVariation: "true"
           offVariation: "false"
@@ -490,6 +530,11 @@ featureFlags:
           - identifier: conor
           - identifier: james
           variation: "false"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag19
       identifier: flag19
@@ -546,6 +591,11 @@ featureFlags:
           - identifier: conor
           - identifier: james
           variation: "false"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag2
       identifier: flag2
@@ -593,6 +643,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod22
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod23
         default:
           onVariation: "true"
           offVariation: "false"
@@ -653,6 +708,11 @@ featureFlags:
           - identifier: conor
           - identifier: james
           variation: "false"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag21
       identifier: flag21
@@ -709,6 +769,11 @@ featureFlags:
           - identifier: conor
           - identifier: james
           variation: "false"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag22
       identifier: flag22
@@ -765,6 +830,11 @@ featureFlags:
           - identifier: conor
           - identifier: james
           variation: "false"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag3
       identifier: flag3
@@ -812,6 +882,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod22
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod23
         default:
           onVariation: "true"
           offVariation: "false"
@@ -867,6 +942,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag5
       identifier: flag5
@@ -914,6 +994,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod22
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod23
         default:
           onVariation: "true"
           offVariation: "false"
@@ -969,6 +1054,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag7
       identifier: flag7
@@ -1016,6 +1106,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod22
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod23
         default:
           onVariation: "true"
           offVariation: "false"
@@ -1071,6 +1166,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag9
       identifier: flag9
@@ -1122,6 +1222,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: prod23
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: test2
       identifier: test
@@ -1169,6 +1274,11 @@ featureFlags:
           offVariation: "false"
         state: "off"
       - identifier: prod22
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod23
         default:
           onVariation: "true"
           offVariation: "false"
