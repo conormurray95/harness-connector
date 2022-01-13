@@ -21,6 +21,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: fifthflag
       identifier: fifthflag
@@ -38,6 +43,11 @@ featureFlags:
           value: "false"
       environments:
       - identifier: ""
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
         default:
           onVariation: "true"
           offVariation: "false"
@@ -63,6 +73,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: fourthflag
       identifier: fourthflag
@@ -80,6 +95,11 @@ featureFlags:
           value: "false"
       environments:
       - identifier: ""
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
         default:
           onVariation: "true"
           offVariation: "false"
@@ -105,6 +125,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: secondflag
       identifier: secondflag
@@ -122,6 +147,11 @@ featureFlags:
           value: "false"
       environments:
       - identifier: ""
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
         default:
           onVariation: "true"
           offVariation: "false"
@@ -147,6 +177,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: sixthflag
       identifier: sixthflag
@@ -164,6 +199,11 @@ featureFlags:
           value: "false"
       environments:
       - identifier: ""
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
         default:
           onVariation: "true"
           offVariation: "false"
@@ -189,6 +229,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: testflag
       identifier: testflag
@@ -210,6 +255,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: thirdflag
       identifier: thirdflag
@@ -227,6 +277,11 @@ featureFlags:
           value: "false"
       environments:
       - identifier: ""
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
         default:
           onVariation: "true"
           offVariation: "false"
