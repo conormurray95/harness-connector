@@ -24,7 +24,7 @@ featureFlags:
       - identifier: test2
         default:
           onVariation: "true"
-          offVariation: "false"
+          offVariation: "true"
         state: "off"
   projectIdentifier: ffm2032noenv
   orgIdentifier: default
