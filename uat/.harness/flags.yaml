@@ -21,51 +21,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-      - identifier: qa
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-      - identifier: prod2
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-      - identifier: uat
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-      - identifier: qb
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-      - identifier: prod1
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-      - identifier: prod3
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-      - identifier: prod4
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
   - flag:
       name: fifthflag
       identifier: fifthflag
@@ -83,51 +38,6 @@ featureFlags:
           value: "false"
       environments:
       - identifier: ""
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qa
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod2
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: uat
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qb
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod1
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod3
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod4
         default:
           onVariation: "true"
           offVariation: "false"
@@ -153,51 +63,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
-      - identifier: qa
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod2
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: uat
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qb
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod1
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod3
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod4
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
   - flag:
       name: fourthflag
       identifier: fourthflag
@@ -215,51 +80,6 @@ featureFlags:
           value: "false"
       environments:
       - identifier: ""
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qa
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod2
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: uat
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qb
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod1
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod3
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod4
         default:
           onVariation: "true"
           offVariation: "false"
@@ -285,51 +105,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-      - identifier: qa
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod2
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: uat
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qb
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod1
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod3
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod4
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
   - flag:
       name: secondflag
       identifier: secondflag
@@ -347,51 +122,6 @@ featureFlags:
           value: "false"
       environments:
       - identifier: ""
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qa
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod2
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: uat
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qb
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod1
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod3
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod4
         default:
           onVariation: "true"
           offVariation: "false"
@@ -417,51 +147,6 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-      - identifier: qa
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod2
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: uat
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qb
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod1
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod3
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod4
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
   - flag:
       name: sixthflag
       identifier: sixthflag
@@ -479,51 +164,6 @@ featureFlags:
           value: "false"
       environments:
       - identifier: ""
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qa
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod2
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: uat
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qb
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod1
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod3
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod4
         default:
           onVariation: "true"
           offVariation: "false"
@@ -549,47 +189,23 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-      - identifier: qa
+  - flag:
+      name: testflag
+      identifier: testflag
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
-      - identifier: prod2
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: uat
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qb
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod1
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod3
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-      - identifier: prod4
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: ""
         default:
           onVariation: "true"
           offVariation: "false"
@@ -611,51 +227,6 @@ featureFlags:
           value: "false"
       environments:
       - identifier: ""
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qa
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod2
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: uat
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: qb
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod1
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod3
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: prod4
         default:
           onVariation: "true"
           offVariation: "false"
