@@ -48,8 +48,8 @@ featureFlags:
       environments:
       - identifier: test
         default:
-          onVariation: string1
-          offVariation: string2
+          onVariation: string3
+          offVariation: string3
         state: "off"
       - identifier: test2
         default:
