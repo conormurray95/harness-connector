@@ -26,6 +26,10 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+        targetRules:
+        - targetGroups:
+          - identifier: group
+          variation: "true"
   - flag:
       name: fifthflag
       identifier: fifthflag
