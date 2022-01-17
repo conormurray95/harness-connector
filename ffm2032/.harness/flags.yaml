@@ -35,30 +35,6 @@ featureFlags:
             op: eq
             values:
             - test
-        - priority: 2
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: identifier
-            op: equal_sensitive
-            values:
-            - test
-        - priority: 3
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: identifier
-            op: starts_with
-            values:
-            - test
-        - priority: 4
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: identifier
-            op: ends_with
-            values:
-            - test
       - identifier: test3
         default:
           onVariation: "true"
