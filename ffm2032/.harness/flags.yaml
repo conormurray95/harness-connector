@@ -2,7 +2,7 @@ featureFlags:
   flags:
   - flag:
       name: flag
-      identifier: flag*&^%
+      identifier: flag
       description: "test"
       permanent: false
       spec:
