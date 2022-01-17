@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: flag
       identifier: flag*&^%
-      description: "test2"
+      description: "test"
       permanent: false
       spec:
         type: boolean
