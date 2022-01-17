@@ -32,7 +32,7 @@ featureFlags:
             serveVariation: "true"
           clauses:
           - attribute: identifier
-            op: equa
+            op: equal
             values:
             - test
         - priority: 2
