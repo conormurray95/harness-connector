@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: flag
       identifier: flag
-      description: "test"
+      description: ""
       permanent: false
       spec:
         type: boolean
@@ -69,7 +69,7 @@ featureFlags:
         default:
           onVariation: string1
           offVariation: string2
-        state: "off"
+        state: "on"
       - identifier: test3
         default:
           onVariation: string1
