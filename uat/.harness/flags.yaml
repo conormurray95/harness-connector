@@ -290,6 +290,14 @@ featureFlags:
             op: equal
             values:
             - test
+        - priority: 3
+          serve:
+            serveVariation: "false"
+          clauses:
+          - attribute: identifier
+            op: ends_with
+            values:
+            - c
   - flag:
       name: thirdflag
       identifier: thirdflag
