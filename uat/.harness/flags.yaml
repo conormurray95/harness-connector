@@ -282,6 +282,14 @@ featureFlags:
             op: starts_with
             values:
             - asd
+        - priority: 2
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: identifier
+            op: equal
+            values:
+            - test
   - flag:
       name: thirdflag
       identifier: thirdflag
