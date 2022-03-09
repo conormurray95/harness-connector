@@ -1,6 +1,95 @@
 featureFlags:
   flags:
   - flag:
+      name: extraflag
+      identifier: extraflag
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: qa
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: qatest
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+        rules:
+        - priority: 0
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - target_group_1
+        - priority: 1
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - randomID
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: fsffsffd
+      identifier: fsffsffd
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: qa
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: qatest
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
       name: multi
       identifier: multi
       description: test
@@ -17,11 +106,99 @@ featureFlags:
           value: v2
         - identifier: v3
           value: v3
+        - identifier: v4
+          value: v4
       environments:
       - identifier: prod
         default:
           onVariation: v1
           offVariation: v2
+        state: "on"
+      - identifier: qa
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "off"
+      - identifier: qatest
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "on"
+        targetRules:
+        - targets:
+          - identifier: target1
+          - identifier: target4
+          variation: v1
+      - identifier: dev
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "on"
+  - flag:
+      name: newflag
+      identifier: newflag
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: prod
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: qa
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: qatest
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "on"
+        rules:
+        - priority: 0
+          serve:
+            serveVariation: "false"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - targetGroup3
+        - priority: 1
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - target_group_2
+        - priority: 2
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - target_group_1
+        targetRules:
+        - targets:
+          - identifier: target1
+          - identifier: target2
+          variation: "true"
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "true"
         state: "off"
   - flag:
       name: Premium Feature
@@ -31,26 +208,37 @@ featureFlags:
       spec:
         type: boolean
         default:
-          onVariation: "true"
-          offVariation: "true"
+          onVariation: "false"
+          offVariation: "false"
         variations:
         - identifier: "true"
           value: "true"
         - identifier: "false"
           value: "false"
-      prerequisites:
-      - flagIdentifier: multi
-        variations:
-        - v1
       environments:
       - identifier: prod
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
         targetRules:
         - targetGroups:
           - identifier: default
           variation: "true"
+      - identifier: qa
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: qatest
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
