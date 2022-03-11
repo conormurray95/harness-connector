@@ -177,9 +177,6 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
-          - identifier: target3
-          variation: v8
-        - targets:
           - identifier: target2
           variation: v3
         - targets:
@@ -188,6 +185,9 @@ featureFlags:
         - targets:
           - identifier: target4
           variation: v2
+        - targets:
+          - identifier: target3
+          variation: v8
       - identifier: dev
         default:
           onVariation: v1
@@ -235,14 +235,6 @@ featureFlags:
             - target_group_1
         - priority: 100
           serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - targetGroup3
-        - priority: 100
-          serve:
             distribution:
               bucketBy: identifier
               variations:
@@ -255,6 +247,30 @@ featureFlags:
             op: segmentMatch
             values:
             - target_group_2
+        - priority: 100
+          serve:
+            serveVariation: "false"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - random5
+        - priority: 100
+          serve:
+            serveVariation: "false"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - randomID
+        - priority: 100
+          serve:
+            serveVariation: "false"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - target_group_1
         - priority: 100
           serve:
             serveVariation: "true"
@@ -278,11 +294,20 @@ featureFlags:
           - attribute: ""
             op: segmentMatch
             values:
+            - targetGroup3
+        - priority: 100
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
             - target_group_2
         targetRules:
         - targets:
           - identifier: target1
-          variation: "true"
+          - identifier: target2
+          variation: "false"
       - identifier: dev
         default:
           onVariation: "true"
