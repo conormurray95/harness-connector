@@ -177,6 +177,9 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
+          - identifier: target3
+          variation: v8
+        - targets:
           - identifier: target2
           variation: v3
         - targets:
@@ -185,9 +188,6 @@ featureFlags:
         - targets:
           - identifier: target4
           variation: v2
-        - targets:
-          - identifier: target3
-          variation: v8
       - identifier: dev
         default:
           onVariation: v1
@@ -307,7 +307,7 @@ featureFlags:
         - targets:
           - identifier: target1
           - identifier: target2
-          variation: "false"
+          variation: "true"
       - identifier: dev
         default:
           onVariation: "true"
