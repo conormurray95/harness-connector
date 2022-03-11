@@ -177,6 +177,9 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
+          - identifier: target4
+          variation: v2
+        - targets:
           - identifier: target3
           variation: v8
         - targets:
@@ -185,9 +188,6 @@ featureFlags:
         - targets:
           - identifier: target1
           variation: v1
-        - targets:
-          - identifier: target4
-          variation: v2
       - identifier: dev
         default:
           onVariation: v1
@@ -255,6 +255,10 @@ featureFlags:
             op: segmentMatch
             values:
             - target_group_2
+        targetRules:
+        - targets:
+          - identifier: target1
+          variation: "true"
       - identifier: dev
         default:
           onVariation: "true"
