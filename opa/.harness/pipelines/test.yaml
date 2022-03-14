@@ -1,0 +1,33 @@
+pipeline:
+    name: test
+    identifier: test
+    allowStageExecutions: false
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    tags: {}
+    stages:
+        - stage:
+              name: test
+              identifier: test
+              description: ""
+              type: Approval
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                name: Approval
+                                identifier: approval
+                                type: HarnessApproval
+                                timeout: 1d
+                                spec:
+                                    approvalMessage: |-
+                                        Please review the following information
+                                        and approve the pipeline progression
+                                    includePipelineExecutionHistory: true
+                                    approvers:
+                                        minimumCount: 1
+                                        disallowPipelineExecutor: false
+                                        userGroups:
+                                            - account.test3
+                                    approverInputs: []
+              tags: {}
