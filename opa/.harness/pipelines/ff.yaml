@@ -1,0 +1,30 @@
+pipeline:
+    name: ff
+    identifier: ff
+    allowStageExecutions: false
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    tags: {}
+    stages:
+        - stage:
+              name: toggle
+              identifier: toggle
+              description: ""
+              type: FeatureFlag
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                type: FlagConfiguration
+                                name: toggle flag on
+                                identifier: toggle_flag_on
+                                spec:
+                                    feature: test
+                                    environment: asdf
+                                    instructions:
+                                        - identifier: SetFeatureFlagStateIdentifier
+                                          type: SetFeatureFlagState
+                                          spec:
+                                              state: "on"
+                                timeout: 10m
+                  serviceDependencies: []
