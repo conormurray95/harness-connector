@@ -16,22 +16,7 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: asdf
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
       - identifier: asf
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: bla
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: blabla
         default:
           onVariation: "true"
           offVariation: "false"
@@ -52,22 +37,7 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: asdf
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
       - identifier: asf
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: bla
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: blabla
         default:
           onVariation: "true"
           offVariation: "false"
@@ -88,25 +58,10 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: asdf
-        default:
-          onVariation: "false"
-          offVariation: "false"
-        state: "off"
       - identifier: asf
         default:
           onVariation: "false"
           offVariation: "false"
-        state: "off"
-      - identifier: bla
-        default:
-          onVariation: "false"
-          offVariation: "false"
-        state: "off"
-      - identifier: blabla
-        default:
-          onVariation: "false"
-          offVariation: "false"
-        state: "off"
+        state: "on"
   projectIdentifier: cmproj
   orgIdentifier: default
