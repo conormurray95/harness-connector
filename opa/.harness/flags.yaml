@@ -102,7 +102,7 @@ featureFlags:
         default:
           onVariation: "false"
           offVariation: "false"
-        state: "on"
+        state: "off"
       - identifier: blabla
         default:
           onVariation: "false"
