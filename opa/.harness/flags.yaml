@@ -21,6 +21,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: asf
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
       - identifier: bla
         default:
           onVariation: "true"
@@ -48,6 +53,11 @@ featureFlags:
           value: "false"
       environments:
       - identifier: asdf
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: asf
         default:
           onVariation: "true"
           offVariation: "false"
@@ -83,6 +93,11 @@ featureFlags:
           onVariation: "false"
           offVariation: "false"
         state: "on"
+      - identifier: asf
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
       - identifier: bla
         default:
           onVariation: "false"
