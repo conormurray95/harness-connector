@@ -21,6 +21,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: bla
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: asdfa
       identifier: asdfa
@@ -42,6 +47,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: bla
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: test
       identifier: test
@@ -59,6 +69,11 @@ featureFlags:
           value: "false"
       environments:
       - identifier: asdf
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "on"
+      - identifier: bla
         default:
           onVariation: "false"
           offVariation: "false"
