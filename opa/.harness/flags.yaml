@@ -21,6 +21,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+      - identifier: second
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: asdfa
       identifier: asdfa
@@ -42,6 +47,11 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+      - identifier: second
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: test
       identifier: test
@@ -63,5 +73,10 @@ featureFlags:
           onVariation: "false"
           offVariation: "false"
         state: "on"
+      - identifier: second
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
   projectIdentifier: cmproj
   orgIdentifier: default
