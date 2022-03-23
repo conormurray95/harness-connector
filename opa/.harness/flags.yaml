@@ -8,7 +8,24 @@ featureFlags:
       spec:
         type: boolean
         default:
- 
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: asf
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: second
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: asdfa
       identifier: asdfa
