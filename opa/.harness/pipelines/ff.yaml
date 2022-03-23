@@ -20,7 +20,7 @@ pipeline:
                                 identifier: toggle_flag_on
                                 spec:
                                     feature: test
-                                    environment: asdf
+                                    environment: second
                                     instructions:
                                         - identifier: SetFeatureFlagStateIdentifier
                                           type: SetFeatureFlagState
