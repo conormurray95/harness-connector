@@ -1,5 +1,5 @@
 pipeline:
-    name: ff-test-3
+    name: ff-test-6
     identifier: ff
     allowStageExecutions: false
     projectIdentifier: cmproj
