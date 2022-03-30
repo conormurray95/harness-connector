@@ -1,5 +1,5 @@
 pipeline:
-    name: updated-name
+    name: new-name
     identifier: ff
     allowStageExecutions: false
     projectIdentifier: cmproj
