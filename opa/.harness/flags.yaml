@@ -1,4 +1,39 @@
 featureFlags:
-  flags: []
+  flags:
+  - flag:
+      name: flag
+      identifier: flag
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: extra
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+        targetRules:
+        - targets:
+          - identifier: target
+          variation: "true"
+      - identifier: prod
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
   projectIdentifier: cmproj
   orgIdentifier: default
