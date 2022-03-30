@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: flag
       identifier: flag
-      description: "my desc"
+      description: ""
       permanent: false
       spec:
         type: boolean
@@ -20,7 +20,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
+        state: "on"
         targetRules:
         - targets:
           - identifier: target
