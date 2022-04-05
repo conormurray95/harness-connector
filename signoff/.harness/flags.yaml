@@ -1,0 +1,25 @@
+featureFlags:
+  flags:
+  - flag:
+      name: flag
+      identifier: flag
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  projectIdentifier: cm_git_test
+  orgIdentifier: default
