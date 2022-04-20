@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: flag
       identifier: flag
-      description: ""
+      description: "asdf"
       permanent: false
       spec:
         type: boolean
