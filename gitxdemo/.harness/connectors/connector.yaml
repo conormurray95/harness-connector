@@ -1,0 +1,22 @@
+connector:
+  name: connector
+  identifier: connector
+  description:
+  orgIdentifier: default
+  projectIdentifier: test
+  type: Github
+  spec:
+    url: https://github.com/conormurray95/harness-connector
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: conormurray95
+          tokenRef: conormurray95
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: conormurray95
+    executeOnDelegate: false
+    type: Repo
