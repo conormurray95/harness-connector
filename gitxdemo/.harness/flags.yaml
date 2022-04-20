@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: my cool flag
       identifier: my_cool_flag
-      description: ""
+      description: "desc"
       permanent: false
       spec:
         type: boolean
