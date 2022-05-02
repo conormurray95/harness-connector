@@ -20,7 +20,7 @@ featureFlags:
         default:
           onVariation: sadf
           offVariation: sadf
-        state: "on"
+        state: "off"
   - flag:
       name: test
       identifier: test
