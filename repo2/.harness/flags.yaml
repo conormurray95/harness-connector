@@ -1,6 +1,27 @@
 featureFlags:
   flags:
   - flag:
+      name: asdf
+      identifier: asdf
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: sadf
+          offVariation: sadf
+        variations:
+        - identifier: sadf
+          value: asdf
+        - identifier: asa
+          value: aaa
+      environments:
+      - identifier: test
+        default:
+          onVariation: sadf
+          offVariation: sadf
+        state: "off"
+  - flag:
       name: test
       identifier: test
       description: ""
