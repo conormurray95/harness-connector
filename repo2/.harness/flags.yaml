@@ -39,7 +39,7 @@ featureFlags:
       environments:
       - identifier: test
         default:
-          onVariation: "true"
+          onVariation: "false"
           offVariation: "false"
         state: "on"
   projectIdentifier: cmproj
