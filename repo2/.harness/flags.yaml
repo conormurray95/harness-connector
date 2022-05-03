@@ -21,6 +21,11 @@ featureFlags:
           onVariation: sadf
           offVariation: sadf
         state: "off"
+      - identifier: test2
+        default:
+          onVariation: sadf
+          offVariation: sadf
+        state: "off"
   - flag:
       name: test
       identifier: test
@@ -42,5 +47,10 @@ featureFlags:
           onVariation: "false"
           offVariation: "false"
         state: "on"
+      - identifier: test2
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
