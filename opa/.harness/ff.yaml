@@ -1,0 +1,45 @@
+pipeline:
+    name: ff
+    identifier: ff
+    projectIdentifier: cmproj
+    orgIdentifier: default
+    tags: {}
+    stages:
+        - stage:
+              name: app
+              identifier: app
+              description: ""
+              type: Approval
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                name: Approval
+                                identifier: approval
+                                type: HarnessApproval
+                                timeout: 1d
+                                spec:
+                                    approvalMessage: |-
+                                        Please review the following information
+                                        and approve the pipeline progression
+                                    includePipelineExecutionHistory: true
+                                    approvers:
+                                        minimumCount: 1
+                                        disallowPipelineExecutor: false
+                                        userGroups:
+                                            - me
+                                    approverInputs: []
+              tags: {}
+              failureStrategies:
+                  - onFailure:
+                        errors:
+                            - Timeout
+                        action:
+                            type: Retry
+                            spec:
+                                retryCount: 1
+                                onRetryFailure:
+                                    action:
+                                        type: Ignore
+                                retryIntervals:
+                                    - 1d
