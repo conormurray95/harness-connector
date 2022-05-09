@@ -1,0 +1,435 @@
+featureFlags:
+  flags:
+  - flag:
+      name: asdf
+      identifier: asdf
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: sdf
+          offVariation: sdf
+        variations:
+        - identifier: sdf
+          value: dsf
+        - identifier: aa
+          value: aa
+      environments:
+      - identifier: dev
+        default:
+          onVariation: sdf
+          offVariation: sdf
+        state: "on"
+      - identifier: prod
+        default:
+          onVariation: sdf
+          offVariation: sdf
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: sdf
+          offVariation: sdf
+        state: "off"
+      - identifier: env
+        default:
+          onVariation: sdf
+          offVariation: sdf
+        state: "off"
+      - identifier: testenv
+        default:
+          onVariation: sdf
+          offVariation: sdf
+        state: "off"
+  - flag:
+      name: asdfasdf
+      identifier: asdfasdf
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      prerequisites:
+      - flagIdentifier: test2
+        variations:
+        - "false"
+      environments:
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+        targetRules:
+        - targetGroups:
+          - identifier: group
+          variation: "true"
+      - identifier: prod
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: env
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: testenv
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: asdfasdfasdfasdfasdf
+      identifier: asdfasdfasdfasdfasdf
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: testenv
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: ccccc
+      identifier: ccccc
+      description: asdfdsdfgsdfgggg
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: testenv
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: dsfg
+      identifier: dsfg
+      description: |
+        gcdf
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "true"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: prod
+        default:
+          onVariation: "false"
+          offVariation: "true"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "false"
+          offVariation: "true"
+        state: "off"
+      - identifier: env
+        default:
+          onVariation: "false"
+          offVariation: "true"
+        state: "off"
+      - identifier: testenv
+        default:
+          onVariation: "false"
+          offVariation: "true"
+        state: "off"
+  - flag:
+      name: fffdsa
+      identifier: fffdsa
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: testenv
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: sdgf
+      identifier: sdgf
+      description: sdfasfdsdfasdfsdfsdsdfasdfdsfg
+      permanent: true
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      prerequisites:
+      - flagIdentifier: dsfg
+        variations:
+        - "true"
+      environments:
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: testenv
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+  - flag:
+      name: sfd
+      identifier: sfd
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: testenv
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: test
+      identifier: test
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+        targetRules:
+        - targetGroups:
+          - identifier: group
+          variation: "true"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: testenv
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: test2
+      identifier: test2
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+        targetRules:
+        - targetGroups:
+          - identifier: group
+          variation: "true"
+      - identifier: prod
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: testenv
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  projectIdentifier: afdasdfasdf
+  orgIdentifier: default
