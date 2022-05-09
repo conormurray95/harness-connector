@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: asdf
       identifier: asdf
-      description: sdf
+      description: lalala
       permanent: false
       spec:
         type: string
