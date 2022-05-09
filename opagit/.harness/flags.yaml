@@ -20,12 +20,12 @@ featureFlags:
         default:
           onVariation: sdf
           offVariation: sdf
-        state: "off"
+        state: "on"
       - identifier: test
         default:
           onVariation: sdf
           offVariation: sdf
-        state: "off"
+        state: "on"
   - flag:
       name: asdfasdf
       identifier: asdfasdf
