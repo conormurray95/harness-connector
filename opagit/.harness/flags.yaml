@@ -20,7 +20,7 @@ featureFlags:
         default:
           onVariation: sdf
           offVariation: sdf
-        state: "off"
+        state: "on"
       - identifier: test
         default:
           onVariation: sdf
