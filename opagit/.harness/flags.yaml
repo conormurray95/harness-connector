@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: asdf
       identifier: asdf
-      description: "sdf"
+      description: sdf
       permanent: false
       spec:
         type: string
@@ -16,27 +16,12 @@ featureFlags:
         - identifier: aa
           value: aa
       environments:
-      - identifier: dev
-        default:
-          onVariation: sdf
-          offVariation: sdf
-        state: "on"
       - identifier: prod
         default:
           onVariation: sdf
           offVariation: sdf
-        state: "on"
+        state: "off"
       - identifier: test
-        default:
-          onVariation: sdf
-          offVariation: sdf
-        state: "off"
-      - identifier: env
-        default:
-          onVariation: sdf
-          offVariation: sdf
-        state: "off"
-      - identifier: testenv
         default:
           onVariation: sdf
           offVariation: sdf
@@ -61,31 +46,12 @@ featureFlags:
         variations:
         - "false"
       environments:
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-        targetRules:
-        - targetGroups:
-          - identifier: group
-          variation: "true"
       - identifier: prod
         default:
           onVariation: "false"
           offVariation: "false"
         state: "off"
       - identifier: test
-        default:
-          onVariation: "false"
-          offVariation: "false"
-        state: "off"
-      - identifier: env
-        default:
-          onVariation: "false"
-          offVariation: "false"
-        state: "off"
-      - identifier: testenv
         default:
           onVariation: "false"
           offVariation: "false"
@@ -106,27 +72,12 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
       - identifier: prod
         default:
           onVariation: "true"
           offVariation: "false"
         state: "off"
       - identifier: test
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: env
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: testenv
         default:
           onVariation: "true"
           offVariation: "false"
@@ -147,27 +98,12 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
       - identifier: prod
         default:
           onVariation: "true"
           offVariation: "false"
         state: "off"
       - identifier: test
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: env
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: testenv
         default:
           onVariation: "true"
           offVariation: "false"
@@ -189,27 +125,12 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
       - identifier: prod
         default:
           onVariation: "false"
           offVariation: "true"
         state: "off"
       - identifier: test
-        default:
-          onVariation: "false"
-          offVariation: "true"
-        state: "off"
-      - identifier: env
-        default:
-          onVariation: "false"
-          offVariation: "true"
-        state: "off"
-      - identifier: testenv
         default:
           onVariation: "false"
           offVariation: "true"
@@ -230,27 +151,12 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
       - identifier: prod
         default:
           onVariation: "true"
           offVariation: "false"
         state: "off"
       - identifier: test
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: env
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: testenv
         default:
           onVariation: "true"
           offVariation: "false"
@@ -275,11 +181,6 @@ featureFlags:
         variations:
         - "true"
       environments:
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
       - identifier: prod
         default:
           onVariation: "true"
@@ -289,17 +190,7 @@ featureFlags:
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
-      - identifier: env
-        default:
-          onVariation: "true"
-          offVariation: "false"
         state: "off"
-      - identifier: testenv
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
   - flag:
       name: sfd
       identifier: sfd
@@ -316,27 +207,12 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
       - identifier: prod
         default:
           onVariation: "true"
           offVariation: "false"
         state: "off"
       - identifier: test
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: env
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: testenv
         default:
           onVariation: "true"
           offVariation: "false"
@@ -357,31 +233,12 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-        targetRules:
-        - targetGroups:
-          - identifier: group
-          variation: "true"
       - identifier: prod
         default:
           onVariation: "true"
           offVariation: "false"
         state: "off"
       - identifier: test
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: env
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: testenv
         default:
           onVariation: "true"
           offVariation: "false"
@@ -402,31 +259,12 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: dev
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-        targetRules:
-        - targetGroups:
-          - identifier: group
-          variation: "true"
       - identifier: prod
         default:
           onVariation: "true"
           offVariation: "false"
         state: "off"
       - identifier: test
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: env
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: testenv
         default:
           onVariation: "true"
           offVariation: "false"
