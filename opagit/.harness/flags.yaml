@@ -162,6 +162,32 @@ featureFlags:
           offVariation: "false"
         state: "off"
   - flag:
+      name: multi
+      identifier: multi
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: v1
+          offVariation: v2
+        variations:
+        - identifier: v1
+          value: v1
+        - identifier: v2
+          value: v2
+      environments:
+      - identifier: prod
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "off"
+  - flag:
       name: sdgf
       identifier: sdgf
       description: sdfasfdsdfasdfsdfsdsdfasdfdsfg
