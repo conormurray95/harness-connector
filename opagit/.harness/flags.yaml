@@ -238,7 +238,7 @@ featureFlags:
         default:
           onVariation: v3
           offVariation: v4
-        state: "on"
+        state: "off"
   - flag:
       name: sdgf
       identifier: sdgf
