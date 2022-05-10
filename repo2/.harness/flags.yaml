@@ -35,6 +35,10 @@ featureFlags:
             op: segmentMatch
             values:
             - target_group_1
+        targetRules:
+        - targets:
+          - identifier: identifier890
+          variation: asa
   - flag:
       name: test
       identifier: test
