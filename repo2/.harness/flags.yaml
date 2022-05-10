@@ -37,12 +37,12 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
-          - identifier: identifier890
-          variation: sadf
-        - targets:
           - identifier: identifier1349
           - identifier: identifier888
           variation: asa
+        - targets:
+          - identifier: identifier890
+          variation: sadf
   - flag:
       name: newflag
       identifier: newflag
@@ -106,11 +106,11 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
+          - identifier: identifier1238
+          - identifier: identifier888
+          variation: "false"
+        - targets:
           - identifier: identifier890
           variation: "true"
-        - targets:
-          - identifier: identifier1238
-          - identifier: identifier1349
-          variation: "false"
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
