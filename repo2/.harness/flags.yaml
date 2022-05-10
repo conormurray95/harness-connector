@@ -25,7 +25,7 @@ featureFlags:
         default:
           onVariation: sadf
           offVariation: sadf
-        state: "on"
+        state: "off"
         rules:
         - priority: 0
           serve:
