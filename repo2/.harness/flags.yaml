@@ -26,6 +26,19 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+        rules:
+        - priority: 0
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - target_group_1
+        targetRules:
+        - targets:
+          - identifier: identifier890
+          variation: "true"
   - flag:
       name: asdf
       identifier: asdf
