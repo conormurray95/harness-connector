@@ -37,6 +37,10 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
+          - identifier: identifier1349
+          - identifier: identifier888
+          variation: asa
+        - targets:
           - identifier: identifier890
           variation: sadf
   projectIdentifier: cmproj
