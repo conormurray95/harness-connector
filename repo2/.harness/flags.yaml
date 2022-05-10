@@ -39,31 +39,5 @@ featureFlags:
         - targets:
           - identifier: identifier890
           variation: sadf
-  - flag:
-      name: test
-      identifier: test
-      description: ""
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: test
-        default:
-          onVariation: "false"
-          offVariation: "false"
-        state: "on"
-      - identifier: test2
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
