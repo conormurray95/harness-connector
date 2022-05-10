@@ -37,12 +37,12 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
-          - identifier: identifier890
-          variation: sadf
-        - targets:
           - identifier: identifier1349
           - identifier: identifier888
           variation: asa
+        - targets:
+          - identifier: identifier890
+          variation: sadf
   - flag:
       name: newflag
       identifier: newflag
@@ -106,11 +106,37 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
+          - identifier: identifier890
+          variation: "true"
+        - targets:
           - identifier: identifier1238
           - identifier: identifier888
           variation: "false"
-        - targets:
-          - identifier: identifier890
-          variation: "true"
+  - flag:
+      name: testttt
+      identifier: testttt
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test2
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
