@@ -37,6 +37,10 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
+          - identifier: identifier1238
+          - identifier: identifier1349
+          variation: "false"
+        - targets:
           - identifier: identifier890
           variation: "true"
   - flag:
