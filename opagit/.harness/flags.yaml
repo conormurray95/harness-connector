@@ -190,7 +190,7 @@ featureFlags:
   - flag:
       name: multi2
       identifier: multi2
-      description: ""
+      description: "multi2"
       permanent: false
       spec:
         type: string
@@ -207,12 +207,12 @@ featureFlags:
         default:
           onVariation: v1
           offVariation: v1
-        state: "off"
+        state: "on"
       - identifier: test
         default:
           onVariation: v1
           offVariation: v1
-        state: "off"
+        state: "on"
   - flag:
       name: multi3
       identifier: multi3
