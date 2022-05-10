@@ -67,6 +67,15 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+        rules:
+        - priority: 0
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - target_group_1
   - flag:
       name: test111
       identifier: test111
@@ -104,11 +113,11 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
+          - identifier: identifier890
+          variation: "true"
+        - targets:
           - identifier: identifier1238
           - identifier: identifier888
           variation: "false"
-        - targets:
-          - identifier: identifier890
-          variation: "true"
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
