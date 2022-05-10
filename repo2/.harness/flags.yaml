@@ -12,9 +12,9 @@ featureFlags:
           offVariation: sadf
         variations:
         - identifier: sadf
-          value: asdf
+          value: asdf2322
         - identifier: asa
-          value: aaa
+          value: aaa23232
       environments:
       - identifier: test
         default:
@@ -37,11 +37,11 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
+          - identifier: identifier890
+          variation: sadf
+        - targets:
           - identifier: identifier1349
           - identifier: identifier888
           variation: asa
-        - targets:
-          - identifier: identifier890
-          variation: sadf
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
