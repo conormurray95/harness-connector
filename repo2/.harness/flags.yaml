@@ -39,10 +39,8 @@ featureFlags:
         - targets:
           - identifier: identifier1349
           - identifier: identifier888
-          variation: asa
-        - targets:
           - identifier: identifier890
-          variation: sadf
+          variation: asa
   - flag:
       name: newflag
       identifier: newflag
