@@ -37,12 +37,12 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
+          - identifier: identifier890
+          variation: sadf
+        - targets:
           - identifier: identifier1349
           - identifier: identifier888
           variation: asa
-        - targets:
-          - identifier: identifier890
-          variation: sadf
   - flag:
       name: newflag
       identifier: newflag
@@ -96,9 +96,9 @@ featureFlags:
           offVariation: "false"
         state: "off"
         rules:
-        - priority: 0
+        - priority: 1
           serve:
-            serveVariation: "true"
+            serveVariation: "false"
           clauses:
           - attribute: ""
             op: segmentMatch
