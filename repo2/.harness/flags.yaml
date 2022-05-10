@@ -26,15 +26,6 @@ featureFlags:
           onVariation: sadf
           offVariation: sadf
         state: "on"
-        rules:
-        - priority: 0
-          serve:
-            serveVariation: sadf
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - target_group_1
         targetRules:
         - targets:
           - identifier: identifier1349
