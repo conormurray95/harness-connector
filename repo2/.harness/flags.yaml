@@ -94,7 +94,7 @@ featureFlags:
         - identifier: test11
           value: "1"
         - identifier: test234234
-          value: "2"
+          value: "22"
       environments:
       - identifier: test
         default:
