@@ -106,6 +106,10 @@ featureFlags:
           onVariation: test11
           offVariation: test234234
         state: "off"
+        targetRules:
+        - targets:
+          - identifier: identifier2000
+          variation: test11
   - flag:
       name: newflag
       identifier: newflag
