@@ -81,6 +81,32 @@ featureFlags:
           - identifier: identifier890
           variation: asa
   - flag:
+      name: flag1
+      identifier: flag1
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: test11
+          offVariation: test234234
+        variations:
+        - identifier: test11
+          value: "1"
+        - identifier: test234234
+          value: "2"
+      environments:
+      - identifier: test
+        default:
+          onVariation: test11
+          offVariation: test234234
+        state: "off"
+      - identifier: test2
+        default:
+          onVariation: test11
+          offVariation: test234234
+        state: "off"
+  - flag:
       name: newflag
       identifier: newflag
       description: ""
