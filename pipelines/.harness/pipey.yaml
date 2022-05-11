@@ -1,5 +1,5 @@
 pipeline:
-    name: pipeyyyyasdf
+    name: pipeytest
     identifier: pipey
     orgIdentifier: FF_SDK_Tests
     tags: {}
