@@ -37,10 +37,6 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
-          - identifier: identifier1238
-          - identifier: identifier1349
-          variation: "false"
-        - targets:
           - identifier: identifier890
           variation: "true"
   - flag:
@@ -119,5 +115,31 @@ featureFlags:
             op: segmentMatch
             values:
             - target_group_1
+  - flag:
+      name: tes333
+      identifier: tes333
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: t1
+          offVariation: t1
+        variations:
+        - identifier: t1
+          value: "1"
+        - identifier: t2
+          value: "2"
+      environments:
+      - identifier: test
+        default:
+          onVariation: t1
+          offVariation: t1
+        state: "off"
+      - identifier: test2
+        default:
+          onVariation: t1
+          offVariation: t1
+        state: "off"
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
