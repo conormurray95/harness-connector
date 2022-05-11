@@ -105,7 +105,7 @@ featureFlags:
         default:
           onVariation: test11
           offVariation: test234234
-        state: "off"
+        state: "on"
         targetRules:
         - targets:
           - identifier: identifier2000
