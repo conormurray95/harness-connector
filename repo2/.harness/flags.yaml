@@ -106,10 +106,15 @@ featureFlags:
           onVariation: test11
           offVariation: test234234
         state: "on"
-        targetRules:
-        - targets:
-          - identifier: identifier2000
-          variation: test11
+        rules:
+        - priority: 1
+          serve:
+            serveVariation: test11
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - target_group_1
   - flag:
       name: newflag
       identifier: newflag
