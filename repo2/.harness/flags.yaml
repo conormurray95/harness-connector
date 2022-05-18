@@ -115,6 +115,10 @@ featureFlags:
             op: segmentMatch
             values:
             - target_group_1
+        targetRules:
+        - targets:
+          - identifier: identifier2000
+          variation: test11
   - flag:
       name: newflag
       identifier: newflag
