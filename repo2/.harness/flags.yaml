@@ -16,29 +16,16 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: test
+      - identifier: asdf
         default:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-      - identifier: test2
+      - identifier: newenv2
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
-        rules:
-        - priority: 0
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - target_group_1
-        targetRules:
-        - targets:
-          - identifier: identifier890
-          variation: "true"
+        state: "off"
   - flag:
       name: asdf
       identifier: asdf
@@ -55,31 +42,94 @@ featureFlags:
         - identifier: asa
           value: aaa23
       environments:
-      - identifier: test
+      - identifier: asdf
         default:
           onVariation: sadf
           offVariation: sadf
         state: "off"
-      - identifier: test2
+      - identifier: newenv2
         default:
           onVariation: sadf
           offVariation: sadf
-        state: "on"
-        rules:
-        - priority: 0
-          serve:
-            serveVariation: sadf
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - target_group_1
-        targetRules:
-        - targets:
-          - identifier: identifier1349
-          - identifier: identifier888
-          - identifier: identifier890
-          variation: asa
+        state: "off"
+  - flag:
+      name: asdfasda
+      identifier: asdfasda
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: asdf
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: newenv2
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: asdfasdf
+      identifier: asdfasdf
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: asdf
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: newenv2
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: asfdfffffff
+      identifier: asfdfffffff
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: asdf
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: newenv2
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   - flag:
       name: flag1
       identifier: flag1
@@ -96,29 +146,16 @@ featureFlags:
         - identifier: test234234
           value: "22"
       environments:
-      - identifier: test
+      - identifier: asdf
         default:
           onVariation: test11
           offVariation: test234234
         state: "off"
-      - identifier: test2
+      - identifier: newenv2
         default:
           onVariation: test11
           offVariation: test234234
         state: "off"
-        rules:
-        - priority: 1
-          serve:
-            serveVariation: test11
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - target_group_1
-        targetRules:
-        - targets:
-          - identifier: identifier2000
-          variation: test11
   - flag:
       name: newflag
       identifier: newflag
@@ -135,25 +172,16 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: test
+      - identifier: asdf
         default:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-      - identifier: test2
+      - identifier: newenv2
         default:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-        rules:
-        - priority: 0
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - target_group_1
   - flag:
       name: tes333
       identifier: tes333
@@ -170,15 +198,41 @@ featureFlags:
         - identifier: t2
           value: "2"
       environments:
-      - identifier: test
+      - identifier: asdf
         default:
           onVariation: t1
           offVariation: t1
         state: "off"
-      - identifier: test2
+      - identifier: newenv2
         default:
           onVariation: t1
           offVariation: t1
+        state: "off"
+  - flag:
+      name: test
+      identifier: test
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: asdf
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: newenv2
+        default:
+          onVariation: "true"
+          offVariation: "false"
         state: "off"
   projectIdentifier: cmproj
   orgIdentifier: FF_SDK_Tests
