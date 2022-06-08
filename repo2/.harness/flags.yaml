@@ -155,7 +155,7 @@ featureFlags:
         default:
           onVariation: test1
           offVariation: test2
-        state: "off"
+        state: "on"
   - flag:
       name: flag1
       identifier: flag1
