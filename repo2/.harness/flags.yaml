@@ -131,6 +131,32 @@ featureFlags:
           offVariation: "false"
         state: "off"
   - flag:
+      name: chinese
+      identifier: chinese
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: test1
+          offVariation: test2
+        variations:
+        - identifier: test1
+          value: 漢字
+        - identifier: test2
+          value: stuff
+      environments:
+      - identifier: asdf
+        default:
+          onVariation: test1
+          offVariation: test2
+        state: "off"
+      - identifier: newenv2
+        default:
+          onVariation: test1
+          offVariation: test2
+        state: "off"
+  - flag:
       name: flag1
       identifier: flag1
       description: ""
